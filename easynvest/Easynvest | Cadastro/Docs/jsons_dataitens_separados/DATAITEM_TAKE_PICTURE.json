@@ -1,0 +1,38 @@
+// Exemplo DATAITEM ELEMENT_TYPE=TAKE_PICTURE
+{
+	"formId": "NAME",							// id
+    "elementType": "TAKE_PICTURE",				// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": "RG",								// ESSE TYPE NAO PRECISA EXISTIR NO FRONT --------------------------
+    "value": "anything",						// Valor preenchido pelo usuário (String), se vier preenchido, pegar url e exibir
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "customRule": [								// sendo um componente especializado, esse é o melhor modo de fazer?
+		{
+			"description": "DESCRIÇÃO_DO_TÍTULO",
+			"value": "TITLE"
+		},
+		{
+			"description": "DESCRIÇÃO_DO_SUBTÍTULO",
+			"value": "SUBTITLE"
+		},
+		{
+			"description": "Selecionar foto",
+			"value": "SELECT_PICTURE_BUTTON"
+		},
+		{
+			"description": "Tirar foto",
+			"value": "TAKE_PICTURE_BUTTON"
+		},
+		{
+			"description": "DESCRIÇÃO_DO_TÍTULO_DO_POPUP_DE_PREVISUALIZAÇÃO",
+			"value": "PREVIEW_TITLE"
+		},
+		{
+			"description": "Fazer upload",
+			"value": "PREVIEW_SEND_BUTTON"
+		},
+		{
+			"description": "Prefiro escolher outra imagem",
+			"value": "PREVIEW_BACK_BUTTON"
+		}
+	]
+}

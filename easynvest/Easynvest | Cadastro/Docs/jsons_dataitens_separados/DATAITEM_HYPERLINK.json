@@ -1,0 +1,8 @@
+// Exemplo DATAITEM ELEMENT_TYPE=HYPERLINK
+{
+	"formId": "NAME",							// id
+    "elementType": "HYPERLINK",					// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "message": "vai pra la",					// Mensagem que será exibida no component (String)
+    "value": "http://path/",						// Url vai aqui (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+}

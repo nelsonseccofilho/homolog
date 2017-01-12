@@ -1,0 +1,8 @@
+// Exemplo DATAITEM ELEMENT_TYPE=TEXTAREA
+{
+	"formId": "NAME",							// id
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "elementType": "TEXTAREA",					// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "message": "hint...",						// Mensagem que será exibida no component (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+}

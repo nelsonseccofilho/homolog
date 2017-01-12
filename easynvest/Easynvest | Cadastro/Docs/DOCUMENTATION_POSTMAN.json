@@ -1,0 +1,164 @@
+/**********************************************************************************************
+ *  V1
+ *
+ *  DOCUMENTATION ENDPOINTS
+ * 
+ *  
+ ***********************************************************************************************/
+ // GET
+ // GET : http://platform.easynvest.com.br/apis/template/v1?name=Cadastro
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/address?queryBy=postalCode&value=03572400
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/address?queryBy=streetName&value=demerval da fonseca
+ // 
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/lookup/banks
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/lookup/states
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/lookup/nationality
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/lookup/occupation
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/lookup/lineofbusiness
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/lookup/index
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/lookup/1
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/lookup/3
+
+
+ // POST
+ // POST : http://platform.easynvest.com.br/apis/template/v1
+{
+    "name": "TempalteName"                      // Nome do Template
+}
+
+ // POST : http://platform.easynvest.com.br/apis/template/v1/form
+{
+    "templateId": 38,                           // Id do Template criado
+    "name": "FormName"                          // Nome do Form
+}
+
+ // POST : http://platform.easynvest.com.br/apis/template/v1/dataitem
+{
+    "formId": 44,
+    "lookupKey": null,
+    "name": "NAME",
+    "elementType": "TEXT",
+    "type": "TITLE",
+    "message": "Mensagem aqui...",
+    "textAlign": null,
+    "marginTop": 70,
+    "value": null,
+    "required": false,
+    "serverValidation": false,
+    "min": null,
+    "max": null,
+    "pattern": null,
+    "mask": null,
+    "hidden": false,
+    "goToNextForm": false,
+    "link": null,
+    "tooltip": null 
+}
+
+ // POST : http://platform.easynvest.com.br/apis/template/v1/dataitem/options
+{
+    "dataItemGuid": "DATAITEM_GUID",                // Guid do dataItem
+    "lookupKey": null,                              // Vincular com a tabela Lookup
+    "itensCustomRules": [                           // Options customizados
+        {
+           "show": [],
+           "hide": [],
+           "description": "Description - 1",
+           "value": "VAI CURINTIA"
+        }, 
+        {
+           "show": [],
+           "hide": [],
+           "description": "Description - 2",
+           "value": "ITEM 2"
+        }, 
+        {
+           "show": [],
+           "hide": [],
+           "description": "Description - 3",
+           "value": "ITEM 3"
+        }
+    ]
+}
+
+ // POST : http://platform.easynvest.com.br/apis/template/v1/nextstep
+{
+    "ParentFormGuid": "GUID",
+    "FormGuid": "GUID",
+    "DataItensToCheck": null,
+    "PossibleForm": null
+}
+
+{
+    "ParentFormId": "GUID",
+    "FormId": "",
+    "DataItensToCheck": ["DATAITEM_GUIDS"],
+    "PossibleForm": {
+        "VALUE1": {
+            "VALUE1.1": "FORM_ID"
+        },
+        "VALUE2": "FORM_ID"
+    }
+}
+
+ // POST : http://platform.easynvest.com.br/apis/preregistry/v1/validatefield
+{
+    "Key": "Name",
+    "Value": "Rafael Antonio Lucio"
+}
+
+ // POST : http://platform.easynvest.com.br/apis/preregistry/v1/completestep
+{
+    "formSteps": ["DATAITEM_GUIDS"],
+    "data": 
+    [
+        {
+            "dataItemGuid": "DATAITEM_GUID",
+            "key": "KEY",
+            "value": "VALUE"
+        },
+        {
+            "dataItemGuid": "DATAITEM_GUID",
+            "Key": "KEY",
+            "value": "VALUE"
+        }
+    ]
+}
+
+ // POST : http://platform.easynvest.com.br/apis/template/v1/fileupload
+ // file : streaming de arquivo
+ // documentType: RG
+
+ // DELETE : http://platform.easynvest.com.br/apis/template/v1/nextstep
+{
+    "ParentFormGuid": "GUID"
+}
+
+// DELETE : http://platform.easynvest.com.br/apis/template/v1
+{
+    "typeOperationDelete":"Template",
+    "itemsGuid":[
+       "DATAITEM_GUID"
+    ]
+}
+
+{
+    "typeOperationDelete":"Form",
+    "itemsGuid":[
+       "FORM_GUID"
+    ]
+}
+
+{
+    "typeOperationDelete":"DataItem",
+    "itemsGuid":[
+       "DATAITEM_GUID"
+    ]
+}
+
+{
+    "typeOperationDelete":"NextStep",
+    "itemsGuid":[
+       "NEXTSTEP_GUID"
+    ]
+}

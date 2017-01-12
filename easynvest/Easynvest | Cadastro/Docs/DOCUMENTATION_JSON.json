@@ -1,0 +1,1067 @@
+/**********************************************************************************************
+ *  V1
+ *
+ *  DOCUMENTATION DATAITEM
+ * 
+ *  
+ ***********************************************************************************************/
+
+{
+	"formId": 00,								// Chave para vincluar um DataItem a um Form (quando for cadastrar)
+	"lookupKey": null,							// Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",								// Chave **unica** para identificação do elemento no **back-end**
+    "elementType": "TEXT",						// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": "TITLE",							// Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": "Mensagem vai aqui..",			// Mensagem que será exibida no component (String)
+    "textAlign": null,							// Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,							// Margen para separação visual de um elemento para outro (Int)
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "required": true,							// Condição para campo obrigatório (true, false)
+    "serverValidation": false,					// Requer validação do campo no lado de server (true, false)
+    "min": null,								// Número mínimo de caracteres no campo (Int)
+    "max": null,								// Número máximo de caracteres no campo (Int)
+    "pattern": null,							// Expressão regular para validação do campo (String)
+    "mask": null,								// Mascara do campo (String)
+    "hidden": false,							// Condição de exibição do dataItem (true, false)
+    "goToNextForm": false,						// Condição para ir para o próximo passo vai aqui (true, false)
+    "link": null,								// Url vai aqui (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "customRule": [								// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+    	{
+    		"description":"",					// Descrição do options que será exibido na tela
+     		"show": ["DATAITEM_GUIDS"],			// Array de GUID do DATAITEMS que serão exibidos após a seleção da opção
+			"hide": ["DATAITEM_GUIDS"]			// Array de GUID do DATAITEMS que serão escondidos após a seleção da opção
+        }
+    ]
+}
+
+//Lista de Names relacionador no Back-end**
+
+// Names cadastrados
+// Names: ActivityArea
+// Names: AdvisorCode
+// Names: BankAccountType
+// Names: BankAgency
+// Names: BankAgencyVerifyingDigit
+// Names: BankAccountNumber
+// Names: BankAccountVerifyingDigit
+// Names: BankCoOwnerName
+// Names: BankCoOwnerDocumentNumber
+// Names: BankDeposit
+// Names: BankJointAccount
+// Names: BankName
+// Names: BankSecondAgency
+// Names: BankSecondAccountNumber
+// Names: BankSecondAgencyVerifyingDigit
+// Names: BankSecondAccountType
+// Names: BankSecondAccountVerifyingDigit
+// Names: BankSecondCoOwnerDocumentNumber
+// Names: BankSecondCoOwnerName
+// Names: BankSecondName
+// Names: BankSecondJointAccount
+// Names: BirthDate
+// Names: CityOfBirth
+// Names: CnhExprirationDate
+// Names: CnhIssueDatefil
+// Names: CnhIssuingState
+// Names: CnhIssuingOrgan
+// Names: CnhNumber
+// Names: CnhSecurityNumber
+// Names: ComercialEnterpriseName
+// Names: ComercialPhone
+// Names: ComercialPostalCode
+// Names: ComercialStreet
+// Names: ComercialNumber
+// Names: ComercialComplement
+// Names: ComercialNeighborhood
+// Names: ComercialState
+// Names: ComercialCity
+// Names: ComercialMailingAddress
+// Names: CountryFrom
+// Names: DocumentNumber
+// Names: DocumentType
+// Names: EasynvestKnowledge
+// Names: Email
+// Names: ExposedPerson
+// Names: FatherName
+// Names: FixedIncome
+// Names: Gender
+// Names: Incomes
+// Names: MaritalStatus
+// Names: MobilePhone
+// Names: MotherName
+// Names: Name
+// Names: Nationality
+// Names: Nickname
+// Names: Occupation
+// Names: OccupationState
+// Names: SpouseName
+// Names: StateOfBirth
+// Names: RelatedParty
+// Names: ResidencialCity
+// Names: ResidencialComplement
+// Names: ResidencialNeighborhood
+// Names: ResidencialMailingAddress
+// Names: ResidencialNumber
+// Names: ResidentialPhone
+// Names: ResidencialPostalCode
+// Names: ResidencialStreet
+// Names: ResidencialState
+// Names: RgNumber
+// Names: RgIssueDate
+// Names: RgIssuingOrgan
+// Names: RgIssuingState
+// Names: VariableIncome
+
+
+//Names não cadastrados
+
+
+
+/**********************************************************************************************
+ *  
+ *
+    TEXT 
+ *  (TITLE, SUBTITLE, TEXT, FOOTER)
+ * 
+ *  
+ ***********************************************************************************************/
+// Exemplo DATAITEM ELEMENT_TYPE=TEXT -> TITLE 24px
+
+{
+	"formId": 00,								// Chave para vincluar um DataItem a um Form (quando for cadastrar)
+	"lookupKey": null,							// Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",								// Chave **unica** para identificação do elemento no **back-end**
+    "elementType": "TEXT",						// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": "TITLE",							// Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": "Mensagem vai aqui..",			// Mensagem que será exibida no component (String)
+    "textAlign": null,							// Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,							// Margen para separação visual de um elemento para outro (Int)
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "required": false,							// Condição para campo obrigatório (true, false)
+    "serverValidation": false,					// Requer validação do campo no lado de server (true, false)
+    "min": null,								// Número mínimo de caracteres no campo (Int)
+    "max": null,								// Número máximo de caracteres no campo (Int)
+    "pattern": null,							// Expressão regular para validação do campo (String)
+    "mask": null,								// Mascara do campo (String)
+    "hidden": false,							// Condição de exibição do dataItem (true, false)
+    "goToNextForm": false,						// Condição para ir para o próximo passo vai aqui (true, false)
+    "link": null,								// Url vai aqui (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "customRule": null							// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+}	
+
+
+// Exemplo DATAITEM ELEMENT_TYPE=TEXT -> SUBTITLE 18px
+{
+	"formId": 00,								// Chave para vincluar um DataItem a um Form (quando for cadastrar)
+	"lookupKey": null,							// Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",								// Chave **unica** para identificação do elemento no **back-end**
+    "elementType": "TEXT",						// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": "SUBTITLE",							// Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": "Mensagem vai aqui..",			// Mensagem que será exibida no component (String)
+    "textAlign": null,							// Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,							// Margen para separação visual de um elemento para outro (Int)
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "required": false,							// Condição para campo obrigatório (true, false)
+    "serverValidation": false,					// Requer validação do campo no lado de server (true, false)
+    "min": null,								// Número mínimo de caracteres no campo (Int)
+    "max": null,								// Número máximo de caracteres no campo (Int)
+    "pattern": null,							// Expressão regular para validação do campo (String)
+    "mask": null,								// Mascara do campo (String)
+    "hidden": false,							// Condição de exibição do dataItem (true, false)
+    "goToNextForm": false,						// Condição para ir para o próximo passo vai aqui (true, false)
+    "link": null,								// Url vai aqui (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "customRule": null							// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+}	
+
+
+// Exemplo DATAITEM ELEMENT_TYPE=TEXT -> TEXT 14px
+{
+	"formId": 00,								// Chave para vincluar um DataItem a um Form (quando for cadastrar)
+	"lookupKey": null,							// Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",								// Chave **unica** para identificação do elemento no **back-end**
+    "elementType": "TEXT",						// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": "TEXT",								// Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": "Mensagem vai aqui..",			// Mensagem que será exibida no component (String)
+    "textAlign": null,							// Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,							// Margen para separação visual de um elemento para outro (Int)
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "required": false,							// Condição para campo obrigatório (true, false)
+    "serverValidation": false,					// Requer validação do campo no lado de server (true, false)
+    "min": null,								// Número mínimo de caracteres no campo (Int)
+    "max": null,								// Número máximo de caracteres no campo (Int)
+    "pattern": null,							// Expressão regular para validação do campo (String)
+    "mask": null,								// Mascara do campo (String)
+    "hidden": false,							// Condição de exibição do dataItem (true, false)
+    "goToNextForm": false,						// Condição para ir para o próximo passo vai aqui (true, false)
+    "link": null,								// Url vai aqui (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "customRule": null							// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+}	
+
+
+// Exemplo DATAITEM ELEMENT_TYPE=TEXT -> FOOTER 11px/12px
+{
+	"formId": 00,								// Chave para vincluar um DataItem a um Form (quando for cadastrar)
+	"lookupKey": null,							// Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",								// Chave **unica** para identificação do elemento no **back-end**
+    "elementType": "TEXT",						// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": "FOOTER",							// Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": "Mensagem vai aqui..",			// Mensagem que será exibida no component (String)
+    "textAlign": null,							// Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,							// Margen para separação visual de um elemento para outro (Int)
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "required": false,							// Condição para campo obrigatório (true, false)
+    "serverValidation": false,					// Requer validação do campo no lado de server (true, false)
+    "min": null,								// Número mínimo de caracteres no campo (Int)
+    "max": null,								// Número máximo de caracteres no campo (Int)
+    "pattern": null,							// Expressão regular para validação do campo (String)
+    "mask": null,								// Mascara do campo (String)
+    "hidden": false,							// Condição de exibição do dataItem (true, false)
+    "goToNextForm": false,						// Condição para ir para o próximo passo vai aqui (true, false)
+    "link": null,								// Url vai aqui (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "customRule": null							// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+}	
+
+
+/**********************************************************************************************
+ *  
+ *
+ *  DOCUMENTAÇÃO ELEMENT_TYPE = FIELD
+ * 
+ *  
+ ***********************************************************************************************/
+
+// Exemplo DATAITEM ELEMENT_TYPE=FIELD -> TEXT
+{
+	"formId": 00,								// Chave para vincluar um DataItem a um Form (quando for cadastrar)
+	"lookupKey": null,							// Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",								// Chave **unica** para identificação do elemento no **back-end**
+    "elementType": "FIELD",						// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": "TEXT",								// Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": null,	                        // Mensagem que será exibida no PLACEHOLDER (String)
+    "textAlign": null,                          // Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,                            // Margen para separação visual de um elemento para outro (Int)    
+    "value": null,                              // Valor preenchido pelo usuário (String)
+    "required": true,                           // Condição para campo obrigatório (true, false)
+    "serverValidation": false,                  // Requer validação do campo no lado de server (true, false)
+    "min": null,                                // Número mínimo de caracteres no campo (Int)
+    "max": null,                                // Número máximo de caracteres no campo (Int)
+    "pattern": null,                            // Expressão regular para validação do campo (String)
+    "mask": null,                               // Mascara do campo (String)
+    "hidden": false,                            // Condição de exibição do dataItem (true, false)
+    "goToNextForm": false,                      // Condição para ir para o próximo passo vai aqui (true, false)
+    "link": null,                               // Url vai aqui (String)
+    "tooltip": null,                            // Descrição do Tooltip vai aqui (String)
+    "customRule": null                          // Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+}
+
+
+// Exemplo DATAITEM ELEMENT_TYPE=FIELD -> TEL
+{
+    "formId": 00,                               // Chave para vincluar um DataItem a um Form (quando for cadastrar)
+    "lookupKey": null,                          // Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",                             // Chave **unica** para identificação do elemento no **back-end**
+    "elementType": "FIELD",                     // Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": "TEL",                              // Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": null,                            // Mensagem que será exibida no PLACEHOLDER (String)
+    "textAlign": null,                          // Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,                            // Margen para separação visual de um elemento para outro (Int)
+    "value": null,                              // Valor preenchido pelo usuário (String)
+    "required": true,                           // Condição para campo obrigatório (true, false)
+    "serverValidation": false,                  // Requer validação do campo no lado de server (true, false)
+    "min": null,                                // Número mínimo de caracteres no campo (Int)
+    "max": null,    						    // Mensagem que será exibida no component (String)
+    "textAlign": null,							// Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,							// Número máximo de caracteres no campo (Int)
+    "pattern": null,							// Expressão regular para validação do campo (String)
+    "mask": null,								// Mascara do campo (String)
+    "hidden": false,							// Condição de exibição do dataItem (true, false)
+    "goToNextForm": false,						// Condição para ir para o próximo passo vai aqui (true, false)
+    "link": null,								// Url vai aqui (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "customRule": null							// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+}
+
+
+// Exemplo DATAITEM ELEMENT_TYPE=FIELD -> EMAIL
+{
+	"formId": 00,								// Chave para vincluar um DataItem a um Form (quando for cadastrar)
+	"lookupKey": null,							// Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",								// Chave **unica** para identificação do elemento no **back-end**
+    "elementType": "FIELD",						// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": "EMAIL",							// Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": null,                            // Mensagem que será exibida no PLACEHOLDER (String)
+    "textAlign": null,							// Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,							// Margen para separação visual de um elemento para outro (Int)
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "required": true,							// Condição para campo obrigatório (true, false)
+    "serverValidation": false,					// Requer validação do campo no lado de server (true, false)
+    "min": null,								// Número mínimo de caracteres no campo (Int)
+    "max": null,								// Número máximo de caracteres no campo (Int)
+    "pattern": null,							// Expressão regular para validação do campo (String)
+    "mask": null,								// Mascara do campo (String)
+    "hidden": false,							// Condição de exibição do dataItem (true, false)
+    "goToNextForm": false,						// Condição para ir para o próximo passo vai aqui (true, false)
+    "link": null,								// Url vai aqui (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "customRule": null							// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+}
+
+
+// Exemplo DATAITEM ELEMENT_TYPE=FIELD -> PASSWORD
+{
+	"formId": 00,								// Chave para vincluar um DataItem a um Form (quando for cadastrar)
+	"lookupKey": null,							// Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",								// Chave **unica** para identificação do elemento no **back-end**
+    "elementType": "FIELD",						// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": "PASSWORD",							// Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": null,                            // Mensagem que será exibida no PLACEHOLDER (String)
+    "textAlign": null,							// Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,							// Margen para separação visual de um elemento para outro (Int)
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "required": true,							// Condição para campo obrigatório (true, false)
+    "serverValidation": false,					// Requer validação do campo no lado de server (true, false)
+    "min": null,								// Número mínimo de caracteres no campo (Int)
+    "max": null,								// Número máximo de caracteres no campo (Int)
+    "pattern": null,							// Expressão regular para validação do campo (String)
+    "mask": null,								// Mascara do campo (String)
+    "hidden": false,							// Condição de exibição do dataItem (true, false)
+    "goToNextForm": false,						// Condição para ir para o próximo passo vai aqui (true, false)
+    "link": null,								// Url vai aqui (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "customRule": null							// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+}
+
+
+// Exemplo DATAITEM ELEMENT_TYPE=FIELD -> DATE
+{
+	"formId": 00,								// Chave para vincluar um DataItem a um Form (quando for cadastrar)
+	"lookupKey": null,							// Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",								// Chave **unica** para identificação do elemento no **back-end**
+    "elementType": "FIELD",						// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": "DATE",								// Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": null,                            // Mensagem que será exibida no PLACEHOLDER (String)
+    "textAlign": null,							// Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,							// Margen para separação visual de um elemento para outro (Int)
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "required": true,							// Condição para campo obrigatório (true, false)
+    "serverValidation": false,					// Requer validação do campo no lado de server (true, false)
+    "min": null,								// Número mínimo de caracteres no campo (Int)
+    "max": null,								// Número máximo de caracteres no campo (Int)
+    "pattern": null,							// Expressão regular para validação do campo (String)
+    "mask": null,								// Mascara do campo (String)
+    "hidden": false,							// Condição de exibição do dataItem (true, false)
+    "goToNextForm": false,						// Condição para ir para o próximo passo vai aqui (true, false)
+    "link": null,								// Url vai aqui (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "customRule": null							// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+}
+
+
+// Exemplo DATAITEM ELEMENT_TYPE=FIELD -> NUMBER
+{
+	"formId": 00,								// Chave para vincluar um DataItem a um Form (quando for cadastrar)
+	"lookupKey": null,							// Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",								// Chave **unica** para identificação do elemento no **back-end**
+    "elementType": "FIELD",						// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": "NUMBER",							// Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": null,                            // Mensagem que será exibida no PLACEHOLDER (String)
+    "textAlign": null,							// Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,							// Margen para separação visual de um elemento para outro (Int)
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "required": true,							// Condição para campo obrigatório (true, false)
+    "serverValidation": false,					// Requer validação do campo no lado de server (true, false)
+    "min": null,								// Número mínimo de caracteres no campo (Int)
+    "max": null,								// Número máximo de caracteres no campo (Int)
+    "pattern": null,							// Expressão regular para validação do campo (String)
+    "mask": null,								// Mascara do campo (String)
+    "hidden": false,							// Condição de exibição do dataItem (true, false)
+    "goToNextForm": false,						// Condição para ir para o próximo passo vai aqui (true, false)
+    "link": null,								// Url vai aqui (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "customRule": null							// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+}
+
+
+// Exemplo DATAITEM ELEMENT_TYPE=FIELD -> CEP
+{
+	"formId": 00,								// Chave para vincluar um DataItem a um Form (quando for cadastrar)
+	"lookupKey": null,							// Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",								// Chave **unica** para identificação do elemento no **back-end**
+    "elementType": "FIELD",						// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": "CEP",								// Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": null,                            // Mensagem que será exibida no PLACEHOLDER (String)
+    "textAlign": null,							// Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,							// Margen para separação visual de um elemento para outro (Int)
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "required": true,							// Condição para campo obrigatório (true, false)
+    "serverValidation": false,					// Requer validação do campo no lado de server (true, false)
+    "min": null,								// Número mínimo de caracteres no campo (Int)
+    "max": null,								// Número máximo de caracteres no campo (Int)
+    "pattern": null,							// Expressão regular para validação do campo (String)
+    "mask": null,								// Mascara do campo (String)
+    "hidden": false,							// Condição de exibição do dataItem (true, false)
+    "goToNextForm": false,						// Condição para ir para o próximo passo vai aqui (true, false)
+    "link": null,								// Url vai aqui (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "customRule": [								// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+    	{
+    		"description": "fulladdress",
+    		"value": "GUID_DATAITEM_WHERE_FILL_RESULT_SEARCH_CEP_ADDRESS"
+    	}
+    ]						
+}
+
+
+// Exemplo DATAITEM ELEMENT_TYPE=FIELD -> CURRENCY
+{
+	"formId": 00,								// Chave para vincluar um DataItem a um Form (quando for cadastrar)
+	"lookupKey": null,							// Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",								// Chave **unica** para identificação do elemento no **back-end**
+    "elementType": "FIELD",						// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": "CURRENCY",							// Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": null,                            // Mensagem que será exibida no PLACEHOLDER (String)
+    "textAlign": null,							// Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,							// Margen para separação visual de um elemento para outro (Int)
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "required": true,							// Condição para campo obrigatório (true, false)
+    "serverValidation": false,					// Requer validação do campo no lado de server (true, false)
+    "min": null,								// Número mínimo de caracteres no campo (Int)
+    "max": null,								// Número máximo de caracteres no campo (Int)
+    "pattern": null,							// Expressão regular para validação do campo (String)
+    "mask": null,								// Mascara do campo (String)
+    "hidden": false,							// Condição de exibição do dataItem (true, false)
+    "goToNextForm": false,						// Condição para ir para o próximo passo vai aqui (true, false)
+    "link": null,								// Url vai aqui (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "customRule": null							// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+}
+
+
+// Exemplo DATAITEM ELEMENT_TYPE=FIELD -> CPF
+{
+	"formId": 00,								// Chave para vincluar um DataItem a um Form (quando for cadastrar)
+	"lookupKey": null,							// Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",								// Chave **unica** para identificação do elemento no **back-end**
+    "elementType": "FIELD",						// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": "CPF",								// Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": null,                            // Mensagem que será exibida no PLACEHOLDER (String)
+    "textAlign": null,							// Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,							// Margen para separação visual de um elemento para outro (Int)
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "required": true,							// Condição para campo obrigatório (true, false)
+    "serverValidation": false,					// Requer validação do campo no lado de server (true, false)
+    "min": null,								// Número mínimo de caracteres no campo (Int)
+    "max": null,								// Número máximo de caracteres no campo (Int)
+    "pattern": null,							// Expressão regular para validação do campo (String)
+    "mask": null,								// Mascara do campo (String)
+    "hidden": false,							// Condição de exibição do dataItem (true, false)
+    "goToNextForm": false,						// Condição para ir para o próximo passo vai aqui (true, false)
+    "link": null,								// Url vai aqui (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "customRule": null							// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+}
+
+
+// Exemplo DATAITEM ELEMENT_TYPE=FIELD -> ACCOUNTNUMBER
+{
+	"formId": 00,								// Chave para vincluar um DataItem a um Form (quando for cadastrar)
+	"lookupKey": null,							// Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",								// Chave **unica** para identificação do elemento no **back-end**
+    "elementType": "FIELD",						// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": "ACCOUNTNUMBER",					// Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": null,                            // Mensagem que será exibida no PLACEHOLDER (String)
+    "textAlign": null,							// Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,							// Margen para separação visual de um elemento para outro (Int)
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "required": true,							// Condição para campo obrigatório (true, false)
+    "serverValidation": false,					// Requer validação do campo no lado de server (true, false)
+    "min": null,								// Número mínimo de caracteres no campo (Int)
+    "max": null,								// Número máximo de caracteres no campo (Int)
+    "pattern": null,							// Expressão regular para validação do campo (String)
+    "mask": null,								// Mascara do campo (String)
+    "hidden": false,							// Condição de exibição do dataItem (true, false)
+    "goToNextForm": false,						// Condição para ir para o próximo passo vai aqui (true, false)
+    "link": null,								// Url vai aqui (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "customRule": null							// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+}
+
+
+
+/**********************************************************************************************
+ *  
+ *
+ *  DOCUMENTAÇÃO ELEMENT_TYPE = HYPERLINK
+ * 
+ *  
+ ***********************************************************************************************/
+
+// Exemplo DATAITEM ELEMENT_TYPE=HYPERLINK
+{
+	"formId": 00,								// Chave para vincluar um DataItem a um Form (quando for cadastrar)
+	"lookupKey": null,							// Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",								// Chave **unica** para identificação do elemento no **back-end**
+    "elementType": "HYPERLINK",					// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": null,								// Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": null,                            // Mensagem que será exibida no PLACEHOLDER (String)
+    "textAlign": null,							// Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,							// Margen para separação visual de um elemento para outro (Int)
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "required": false,							// Condição para campo obrigatório (true, false)
+    "serverValidation": false,					// Requer validação do campo no lado de server (true, false)
+    "min": null,								// Número mínimo de caracteres no campo (Int)
+    "max": null,								// Número máximo de caracteres no campo (Int)
+    "pattern": null,							// Expressão regular para validação do campo (String)
+    "mask": null,								// Mascara do campo (String)
+    "hidden": false,							// Condição de exibição do dataItem (true, false)
+    "goToNextForm": false,						// Condição para ir para o próximo passo vai aqui (true, false)
+    "link": "http://path/",						// Url vai aqui (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "customRule": null							// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+}
+
+
+/**********************************************************************************************
+ *  
+ *
+ *  DOCUMENTAÇÃO ELEMENT_TYPE = SELECT
+ * 
+ *  
+ ***********************************************************************************************/
+
+// Exemplo DATAITEM ELEMENT_TYPE=SELECT
+{
+	"formId": 00,								// Chave para vincluar um DataItem a um Form (quando for cadastrar)
+	"lookupKey": null,							// Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",								// Chave **unica** para identificação do elemento no **back-end**
+    "elementType": "SELECT",					// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": "NORMAL",							// Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": null,                            // Mensagem que será exibida no PLACEHOLDER (String)
+    "textAlign": null,							// Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,							// Margen para separação visual de um elemento para outro (Int)
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "required": false,							// Condição para campo obrigatório (true, false)
+    "serverValidation": false,					// Requer validação do campo no lado de server (true, false)
+    "min": null,								// Número mínimo de caracteres no campo (Int)
+    "max": null,								// Número máximo de caracteres no campo (Int)
+    "pattern": null,							// Expressão regular para validação do campo (String)
+    "mask": null,								// Mascara do campo (String)
+    "hidden": false,							// Condição de exibição do dataItem (true, false)
+    "goToNextForm": false,						// Condição para ir para o próximo passo vai aqui (true, false)
+    "link": "http://path/",						// Url vai aqui (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "customRule": [								// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+    	{
+    		"description": "DESCRIÇÃO_QUALQUER",
+    		"value": "VALUE_QUALQUER" 
+    	}
+    ]
+}
+
+
+/**********************************************************************************************
+ *  
+ *
+ *  DOCUMENTAÇÃO ELEMENT_TYPE = SELECT
+ * 
+ *  
+ ***********************************************************************************************/
+
+// Exemplo DATAITEM ELEMENT_TYPE=SELECT
+{
+	"formId": 00,								// Chave para vincluar um DataItem a um Form (quando for cadastrar)
+	"lookupKey": null,							// Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",								// Chave **unica** para identificação do elemento no **back-end**
+    "elementType": "SELECT",					// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": "FILL_CITY",						// Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": null,                            // Mensagem que será exibida no PLACEHOLDER (String)
+    "textAlign": null,							// Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,							// Margen para separação visual de um elemento para outro (Int)
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "required": false,							// Condição para campo obrigatório (true, false)
+    "serverValidation": false,					// Requer validação do campo no lado de server (true, false)
+    "min": null,								// Número mínimo de caracteres no campo (Int)
+    "max": null,								// Número máximo de caracteres no campo (Int)
+    "pattern": null,							// Expressão regular para validação do campo (String)
+    "mask": null,								// Mascara do campo (String)
+    "hidden": false,							// Condição de exibição do dataItem (true, false)
+    "goToNextForm": false,						// Condição para ir para o próximo passo vai aqui (true, false)
+    "link": "DATAITEM_GUID_WHERE_FILL_VALUE",	// Url vai aqui (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "customRule": null							// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+}
+
+
+/**********************************************************************************************
+ *  
+ *
+ *  DOCUMENTAÇÃO ELEMENT_TYPE = TEXTAREA
+ * 
+ *  
+ ***********************************************************************************************/
+
+// Exemplo DATAITEM ELEMENT_TYPE=TEXTAREA
+{
+	"formId": 00,								// Chave para vincluar um DataItem a um Form (quando for cadastrar)
+	"lookupKey": null,							// Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",								// Chave **unica** para identificação do elemento no **back-end**
+    "elementType": "TEXTAREA",					// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": null,								// Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": null,                            // Mensagem que será exibida no PLACEHOLDER (String)
+    "textAlign": null,							// Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,							// Margen para separação visual de um elemento para outro (Int)
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "required": false,							// Condição para campo obrigatório (true, false)
+    "serverValidation": false,					// Requer validação do campo no lado de server (true, false)
+    "min": null,								// Número mínimo de caracteres no campo (Int)
+    "max": null,								// Número máximo de caracteres no campo (Int)
+    "pattern": null,							// Expressão regular para validação do campo (String)
+    "mask": null,								// Mascara do campo (String)
+    "hidden": false,							// Condição de exibição do dataItem (true, false)
+    "goToNextForm": false,						// Condição para ir para o próximo passo vai aqui (true, false)
+    "link": null,								// Url vai aqui (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "customRule": null							// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+}
+
+
+/**********************************************************************************************
+ *  
+ *
+ *  DOCUMENTAÇÃO ELEMENT_TYPE = CHECKBOX
+ * 
+ *  
+ ***********************************************************************************************/
+
+// Exemplo DATAITEM ELEMENT_TYPE=CHECKBOX
+{
+	"formId": 00,								// Chave para vincluar um DataItem a um Form (quando for cadastrar)
+	"lookupKey": null,							// Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",								// Chave **unica** para identificação do elemento no **back-end**
+    "elementType": "CHECKBOX",					// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": "BOX",								// Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": "lorem ipsum",                   // Mensagem que será exibida ao lado do checkbox
+    "textAlign": null,							// Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,							// Margen para separação visual de um elemento para outro (Int)
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "required": false,							// Condição para campo obrigatório (true, false)
+    "serverValidation": false,					// Requer validação do campo no lado de server (true, false)
+    "min": null,								// Número mínimo de caracteres no campo (Int)
+    "max": null,								// Número máximo de caracteres no campo (Int)
+    "pattern": null,							// Expressão regular para validação do campo (String)
+    "mask": null,								// Mascara do campo (String)
+    "hidden": false,							// Condição de exibição do dataItem (true, false)
+    "goToNextForm": false,						// Condição para ir para o próximo passo vai aqui (true, false)
+    "link": null,								// Url vai aqui (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "customRule": null							// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+}
+
+/**********************************************************************************************
+ *  
+ *
+ *  DOCUMENTAÇÃO ELEMENT_TYPE = RADIO
+ * 
+ *  
+ ***********************************************************************************************/
+
+// Exemplo DATAITEM ELEMENT_TYPE = RADIO
+
+
+{
+    "formId": 00,                               // Chave para vincluar um DataItem a um Form (quando for cadastrar)
+    "lookupKey": null,                         // Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",                             // Chave **unica** para identificação do elemento no **back-end**
+    "elementType" : "RADIO",                    // Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type" : "BUTTON_HORIZONTAL",               // Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": "lorem ipsum",                   // Mensagem que será exibida ao lado do checkbox
+    "textAlign": null,                          // Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,                            // Margen para separação visual de um elemento para outro (Int)
+    "value": null,                              // Valor preenchido pelo usuário (String)
+    "required": true,                           // Condição para campo obrigatório (true, false)
+    "serverValidation": false,                  // Requer validação do campo no lado de server (true, false)
+    "min": null,                                // Número mínimo de caracteres no campo (Int)
+    "max": null,                                // Número máximo de caracteres no campo (Int)
+    "pattern": null,                            // Expressão regular para validação do campo (String)
+    "mask": null,                               // Mascara do campo (String)
+    "hidden": false,                            // Condição de exibição do dataItem (true, false)
+    "goToNextForm" : true,                      // Condição para ir para o próximo passo vai aqui (true, false)
+    "link": null,                               // Url vai aqui (String)
+    "tooltip": null,                            // Descrição do Tooltip vai aqui (String)
+    "options" : [ {                             // Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+        "description" : "M",
+        "value" : "1"
+      }, {
+        "description" : "F",
+        "value" : "2"
+      } ],                       
+}    
+
+/**********************************************************************************************
+ *  
+ *
+ *  DOCUMENTAÇÃO ELEMENT_TYPE = TAKE_PICTURE
+ * 
+ *  
+ ***********************************************************************************************/
+
+// Exemplo DATAITEM ELEMENT_TYPE=TAKE_PICTURE
+{
+	"formId": 00,								// Chave para vincluar um DataItem a um Form (quando for cadastrar)
+	"lookupKey": null,							// Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",								// Chave **unica** para identificação do elemento no **back-end**
+    "elementType": "TAKE_PICTURE",				// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": "RG",								// Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": null,                            // Mensagem que será exibida no PLACEHOLDER (String)
+    "textAlign": null,							// Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,							// Margen para separação visual de um elemento para outro (Int)
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "required": false,							// Condição para campo obrigatório (true, false)
+    "serverValidation": false,					// Requer validação do campo no lado de server (true, false)
+    "min": null,								// Número mínimo de caracteres no campo (Int)
+    "max": null,								// Número máximo de caracteres no campo (Int)
+    "pattern": null,							// Expressão regular para validação do campo (String)
+    "mask": null,								// Mascara do campo (String)
+    "hidden": false,							// Condição de exibição do dataItem (true, false)
+    "goToNextForm": false,						// Condição para ir para o próximo passo vai aqui (true, false)
+    "link": "http://path_IMAGEM_INITIAL",		// Url vai aqui (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "customRule": [								// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+		{
+			"description": "DESCRIÇÃO_DO_TÍTULO",
+			"value": "TITLE"
+		},
+		{
+			"description": "DESCRIÇÃO_DO_SUBTÍTULO",
+			"value": "SUBTITLE"
+		},
+		{
+			"description": "Selecionar foto",
+			"value": "SELECT_PICTURE_BUTTON"
+		},
+		{
+			"description": "Tirar foto",
+			"value": "TAKE_PICTURE_BUTTON"
+		},
+		{
+			"description": "DESCRIÇÃO_DO_TÍTULO_DO_POPUP_DE_PREVISUALIZAÇÃO",
+			"value": "PREVIEW_TITLE"
+		},
+		{
+			"description": "Fazer upload",
+			"value": "PREVIEW_SEND_BUTTON"
+		},
+		{
+			"description": "Prefiro escolher outra imagem",
+			"value": "PREVIEW_BACK_BUTTON"
+		}
+	]
+}
+
+// Lista de ENUM DOCUMENT_TYPE quando for cadastrar
+// DOCUMENT_TYPE: RG = 0,
+// DOCUMENT_TYPE: CNH = 1,
+// DOCUMENT_TYPE: RNE = 2,
+// DOCUMENT_TYPE: AD = 3,
+// DOCUMENT_TYPE: IM = 4,
+// DOCUMENT_TYPE: CN = 5,
+// DOCUMENT_TYPE: MD = 6,
+// DOCUMENT_TYPE: AR = 7,
+// DOCUMENT_TYPE: EN = 8,
+// DOCUMENT_TYPE: KS = 9,
+// DOCUMENT_TYPE: PP = 10,
+// DOCUMENT_TYPE: CR = 11,
+// DOCUMENT_TYPE: EX = 12,
+// DOCUMENT_TYPE: CT = 13,
+// DOCUMENT_TYPE: AE = 14,
+// DOCUMENT_TYPE: JZ = 15,
+// DOCUMENT_TYPE: MV = 16,
+// DOCUMENT_TYPE: PS = 17,
+// DOCUMENT_TYPE: AM = 18,
+// DOCUMENT_TYPE: MR = 19,
+// DOCUMENT_TYPE: CI = 20,
+// DOCUMENT_TYPE: OD = 21,
+// DOCUMENT_TYPE: EC = 22,
+// DOCUMENT_TYPE: TE = 23,
+// DOCUMENT_TYPE: PL = 24,
+// DOCUMENT_TYPE: PF = 25,
+// DOCUMENT_TYPE: FA = 26,
+// DOCUMENT_TYPE: MJ = 27,
+// DOCUMENT_TYPE: RP = 28,
+// DOCUMENT_TYPE: EF = 29,
+// DOCUMENT_TYPE: RC = 30
+
+
+
+/**********************************************************************************************
+ *  
+ *
+ *  DOCUMENTAÇÃO ELEMENT_TYPE = PICTURE
+ * 
+ *  
+ ***********************************************************************************************/
+
+// Exemplo DATAITEM ELEMENT_TYPE=PICTURE
+{
+	"formId": 00,								// Chave para vincluar um DataItem a um Form (quando for cadastrar)
+	"lookupKey": null,							// Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",								// Chave **unica** para identificação do elemento no **back-end**
+    "elementType": "PICTURE",					// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": null,								// Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": null,                            // Mensagem que será exibida no PLACEHOLDER (String)
+    "textAlign": null,							// Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,							// Margen para separação visual de um elemento para outro (Int)
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "required": false,							// Condição para campo obrigatório (true, false)
+    "serverValidation": false,					// Requer validação do campo no lado de server (true, false)
+    "min": null,								// Número mínimo de caracteres no campo (Int)
+    "max": null,								// Número máximo de caracteres no campo (Int)
+    "pattern": null,							// Expressão regular para validação do campo (String)
+    "mask": null,								// Mascara do campo (String)
+    "hidden": false,							// Condição de exibição do dataItem (true, false)
+    "goToNextForm": false,						// Condição para ir para o próximo passo vai aqui (true, false)
+    "link": "http://path_IMAGEM",				// Url vai aqui (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "customRule": null							// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+}
+
+
+/**********************************************************************************************
+ *  
+ *
+ *  DOCUMENTAÇÃO ELEMENT_TYPE = TIME
+ * 
+ *  
+ ***********************************************************************************************/
+
+// Exemplo DATAITEM ELEMENT_TYPE=PICTURE
+{
+	"formId": 00,								// Chave para vincluar um DataItem a um Form (quando for cadastrar)
+	"lookupKey": null,							// Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",								// Chave **unica** para identificação do elemento no **back-end**
+    "elementType": "TIME",	 					// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": null,								// Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": null,                            // Mensagem que será exibida no PLACEHOLDER (String)
+    "textAlign": null,							// Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,							// Margen para separação visual de um elemento para outro (Int)
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "required": false,							// Condição para campo obrigatório (true, false)
+    "serverValidation": false,					// Requer validação do campo no lado de server (true, false)
+    "min": null,								// Número mínimo de caracteres no campo (Int)
+    "max": null,								// Número máximo de caracteres no campo (Int)
+    "pattern": null,							// Expressão regular para validação do campo (String)
+    "mask": null,								// Mascara do campo (String)
+    "hidden": false,							// Condição de exibição do dataItem (true, false)
+    "goToNextForm": false,						// Condição para ir para o próximo passo vai aqui (true, false)
+    "link": null,								// Url vai aqui (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "customRule": null							// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+}
+
+
+/**********************************************************************************************
+ *  
+ *
+ *  DOCUMENTAÇÃO ELEMENT_TYPE = INTERNAL_VALIDATION
+ * 
+ *  
+ ***********************************************************************************************/
+
+// Exemplo DATAITEM ELEMENT_TYPE=PICTURE
+{
+	"formId": 00,								// Chave para vincluar um DataItem a um Form (quando for cadastrar)
+	"lookupKey": null,							// Chave para vincular customRule (quando for cadastrar)
+    "name": "NAME",								// Chave **unica** para identificação do elemento no **back-end**
+    "elementType": "INTERNAL_VALIDATION",		// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, RADIO, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": "ROCKET",							// Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER, TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET, RADIO_VERTICAL, RADIO_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": null,                            // Mensagem que será exibida no PLACEHOLDER (String)
+    "textAlign": null,							// Alinhamento do texto (CENTER, LEFT, RIGHT)
+    "marginTop": 70,							// Margen para separação visual de um elemento para outro (Int)
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "required": false,							// Condição para campo obrigatório (true, false)
+    "serverValidation": false,					// Requer validação do campo no lado de server (true, false)
+    "min": null,								// Número mínimo de caracteres no campo (Int)
+    "max": null,								// Número máximo de caracteres no campo (Int)
+    "pattern": null,							// Expressão regular para validação do campo (String)
+    "mask": null,								// Mascara do campo (String)
+    "hidden": false,							// Condição de exibição do dataItem (true, false)
+    "goToNextForm": false,						// Condição para ir para o próximo passo vai aqui (true, false)
+    "link": null,								// Url vai aqui (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "customRule": [								// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+    	{
+    		"description": "PENDENCIE_IDENTIFICATION",
+    		"value": "FORM_GUID"
+    	}
+    ]
+}
+
+/**********************************************************************************************
+ *  V1
+ *
+ *  DOCUMENTATION ENDPOINTS
+ * 
+ *  
+ ***********************************************************************************************/
+ // GET
+ // GET : http://platform.easynvest.com.br/apis/template/v1?name=Cadastro
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/address?queryBy=postalCode&value=03572400
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/address?queryBy=streetName&value=demerval da fonseca
+ // 
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/lookup/banks
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/lookup/states
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/lookup/nationality
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/lookup/occupation
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/lookup/lineofbusiness
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/lookup/index
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/lookup/1
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/lookup/3
+
+
+ // POST
+ // POST : http://platform.easynvest.com.br/apis/template/v1
+{
+	"name": "TempalteName"						// Nome do Template
+}
+
+ // POST : http://platform.easynvest.com.br/apis/template/v1/form
+{
+    "templateId": 38,							// Id do Template criado
+    "name": "FormName"							// Nome do Form
+}
+
+ // POST : http://platform.easynvest.com.br/apis/template/v1/dataitem
+{
+	"formId": 00,
+	"lookupKey": null,
+    "name": "NAME",
+    "elementType": "TEXT",
+    "type": "TITLE",
+    "message": "Mensagem aqui...",
+    "textAlign": null,
+    "marginTop": 70,
+    "value": null,
+    "required": false,
+    "serverValidation": false,
+    "min": null,
+    "max": null,
+    "pattern": null,
+    "mask": null,
+    "hidden": false,
+    "goToNextForm": false,
+    "link": null,
+    "tooltip": null 
+}
+
+ // POST : http://platform.easynvest.com.br/apis/template/v1/dataitem/options
+{
+    "dataItemGuid": "DATAITEM_GUID",				// Guid do dataItem
+    "lookupKey": null,								// Vincular com a tabela Lookup
+    "itensCustomRules": [							// Options customizados
+    	{
+           "show": [],
+           "hide": [],
+           "description": "Description - 1",
+           "value": "VAI CURINTIA"
+	    }, 
+	    {
+           "show": [],
+           "hide": [],
+           "description": "Description - 2",
+           "value": "ITEM 2"
+	    }, 
+	    {
+           "show": [],
+           "hide": [],
+           "description": "Description - 3",
+           "value": "ITEM 3"
+	    }
+    ]
+}
+
+ // POST : http://platform.easynvest.com.br/apis/template/v1/nextstep
+{
+	"ParentFormGuid": "GUID",
+	"FormGuid": "GUID",
+	"DataItensToCheck": null,
+	"PossibleForm": null
+}
+
+{
+	"ParentFormId": "GUID",
+	"FormId": "",
+	"DataItensToCheck": ["DATAITEM_GUIDS"],
+	"PossibleForm": {
+		"VALUE1": {
+			"VALUE1.1": "FORM_ID"
+		},
+		"VALUE2": "FORM_ID"
+	}
+}
+
+ // POST : http://platform.easynvest.com.br/apis/preregistry/v1/validatefield
+{
+	"Key": "Name",
+	"Value": "Rafael Antonio Lucio"
+}
+
+ // POST : http://platform.easynvest.com.br/apis/preregistry/v1/completestep
+{
+	"formSteps": ["DATAITEM_GUIDS"],
+	"data": 
+	[
+		{
+			"dataItemGuid": "DATAITEM_GUID",
+			"key": "KEY",
+			"value": "VALUE"
+		},
+		{
+			"dataItemGuid": "DATAITEM_GUID",
+			"Key": "KEY",
+			"value": "VALUE"
+		}
+	]
+}
+
+ // POST : http://platform.easynvest.com.br/apis/template/v1/fileupload
+ // file : streaming de arquivo
+ // documentType: RG
+
+ // DELETE : http://platform.easynvest.com.br/apis/template/v1/nextstep
+{
+	"ParentFormGuid": "GUID"
+}
+
+// DELETE : http://platform.easynvest.com.br/apis/template/v1
+{
+    "typeOperationDelete":"Template",
+    "itemsGuid":[
+       "DATAITEM_GUID"
+    ]
+}
+
+{
+    "typeOperationDelete":"Form",
+    "itemsGuid":[
+       "FORM_GUID"
+    ]
+}
+
+{
+    "typeOperationDelete":"DataItem",
+    "itemsGuid":[
+       "DATAITEM_GUID"
+    ]
+}
+
+{
+    "typeOperationDelete":"NextStep",
+    "itemsGuid":[
+       "NEXTSTEP_GUID"
+    ]
+}

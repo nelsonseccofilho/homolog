@@ -1,0 +1,10 @@
+// Exemplo DATAITEM ELEMENT_TYPE=FIELD -> TEXT
+{
+	"formId": "NAME",							// id
+    "value": "",								// Valor preenchido pelo usuário (String)
+    "elementType": "FIELD",						// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": "TEXT",								// Tipo para um ELEMENT_TYPE que será exibido (TEL, NUMBER, DATE, EMAIL, PASSWORD, CEP, CURRENCY, CPF, ACCOUNTNUMBER, NORMAL, FILL_CITY, ROCKET)
+    "message": "hint",							// Mensagem que será exibida no component (String)
+    "pattern": null,							// Expressão regular para validação do campo (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+}

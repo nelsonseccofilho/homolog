@@ -1,0 +1,19 @@
+// Exemplo DATAITEM ELEMENT_TYPE=RADIO
+{
+	"formId": "NAME",							// id
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "elementType": "RADIO",						// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "type": "BUTTON_VERTICAL",					// Tipo para um ELEMENT_TYPE que será exibido (NORMAL_VERTICAL, NORMAL_HORIZONTAL, BUTTON_VERTICAL, BUTTON_HORIZONTAL)
+    "message": null,							// Mensagem que será exibida no component (String) ---- percisa??
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "options": [								// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+    	{
+    		"description": "DESCRIÇÃO_QUALQUER",
+    		"value": "VALUE_QUALQUER"
+    	},
+    	{
+    		"description": "DESCRIÇÃO QUALQUER 2",
+    		"value": "VALUE_QUALQUER2"
+    	}
+    ]
+}

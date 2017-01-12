@@ -1,0 +1,8 @@
+// Exemplo DATAITEM ELEMENT_TYPE=PICTURE
+{
+	"formId": "NAME",							// id
+    "value": "link para imagem",				// Valor preenchido pelo usuário (String)
+    "elementType": "PICTURE",					// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "message": "descricao da imagem",			// Mensagem que será exibida no component (String) ----- para acessibilidade
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+}

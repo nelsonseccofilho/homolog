@@ -1,0 +1,8 @@
+// Exemplo DATAITEM ELEMENT_TYPE=CHECKBOX
+{
+	"formId": "NAME",							// id
+    "value": null,								// Valor preenchido pelo usuário ("true"/"false" ou true/false)
+    "elementType": "CHECKBOX",					// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "message": "check this",					// Mensagem que será exibida no component (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+}

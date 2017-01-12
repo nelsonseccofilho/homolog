@@ -1,0 +1,7 @@
+// Exemplo DATAITEM ELEMENT_TYPE=TIME
+{
+	"formId": "NAME",							// id
+    "elementType": "TIME",	 					// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "message": "14:59",							// Mensagem que será exibida no component (String) --- tempo restante
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+}

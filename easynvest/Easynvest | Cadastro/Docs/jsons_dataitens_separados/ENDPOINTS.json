@@ -1,0 +1,140 @@
+/**********************************************************************************************
+ *  V1
+ *
+ *  DOCUMENTATION ENDPOINTS
+ * 
+ *  
+ ***********************************************************************************************/
+ // GETS
+ // GET : http://platform.easynvest.com.br/apis/template/v1?name=Cadastro
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/address?queryBy=postalCode&value=03572400
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/address?queryBy=streetName&value=demerval da fonseca
+ // 
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/lookup/banks
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/lookup/states
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/lookup/nationality
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/lookup/occupation
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/lookup/lineofbusiness
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/lookup/index
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/lookup/1
+ // GET : http://platform.easynvest.com.br/apis/resources/v1/lookup/3
+
+
+ // POSTS
+ // POST : http://platform.easynvest.com.br/apis/template/v1
+{
+	"name": "TemplateName"						// Nome do Template
+}
+
+ // POST : http://platform.easynvest.com.br/apis/template/v1/form
+{
+    "templateId": 38,							// Id do Template criado
+    "name": "FormName"							// Nome do Form
+}
+
+ // POST : http://platform.easynvest.com.br/apis/template/v1/dataitem
+{
+	"id": "name",
+  "elementType": "TEXT",
+  "type": "TITLE",
+  "message": "Mensagem aqui...",
+  "value": null,
+  "pattern": null,
+  "tooltip": null 
+}
+
+ // POST : http://platform.easynvest.com.br/apis/template/v1/dataitem/options
+{
+    "dataItemGuid": "DATAITEM_GUID",				// Guid do dataItem
+    "itensCustomRules": [							// Options customizados
+    	{
+           "description": "Description - 1",
+           "value": "VAI CURINTIA"
+	    }, 
+	    {
+           "description": "Description - 2",
+           "value": "ITEM 2"
+	    }, 
+	    {
+           "description": "Description - 3",
+           "value": "ITEM 3"
+	    }
+    ]
+}
+
+ // POST : http://platform.easynvest.com.br/apis/template/v1/nextstep
+/* {
+	"ParentFormGuid": "GUID",
+	"FormGuid": "GUID",
+	"DataItensToCheck": null,
+	"PossibleForm": null
+} */
+
+/* {
+	"ParentFormId": "GUID",
+	"FormId": "",
+	"DataItensToCheck": ["DATAITEM_GUIDS"],
+	"PossibleForm": {
+		"VALUE1": {
+			"VALUE1.1": "FORM_ID"
+		},
+		"VALUE2": "FORM_ID"
+	}
+} */
+
+ // POST : http://platform.easynvest.com.br/apis/preregistry/v1/validatefield
+{
+	"Key": "Name",
+	"Value": "Rafael Antonio Lucio"
+}
+
+ // POST : http://platform.easynvest.com.br/apis/preregistry/v1/completestep
+{
+	"formSteps": ["DATAITEM_GUIDS"],
+	"data": 
+	[
+		{
+			"dataItemGuid": "DATAITEM_GUID",
+			"key": "KEY",
+			"value": "VALUE"
+		},
+		{
+			"dataItemGuid": "DATAITEM_GUID",
+			"Key": "KEY",
+			"value": "VALUE"
+		}
+	]
+}
+
+ // POST : http://platform.easynvest.com.br/apis/template/v1/fileupload
+ // file : streaming de arquivo
+ // documentType: RG
+
+ // DELETE : http://platform.easynvest.com.br/apis/template/v1/nextstep
+{
+	"ParentFormGuid": "GUID"
+}
+
+ // DELETE : http://platform.easynvest.com.br/apis/template/v1
+{
+    "typeOperationDelete":"Form",
+    "itemsGuid":[
+       "FORM_GUID"
+    ]
+}
+
+
+{
+    "typeOperationDelete":"DataItem",
+    "itemsGuid":[
+       "DATAITEM_GUID"
+    ]
+}
+
+
+{
+    "typeOperationDelete":"NextStep",
+    "itemsGuid":[
+       "NEXTSTEP_GUID"
+    ]
+}

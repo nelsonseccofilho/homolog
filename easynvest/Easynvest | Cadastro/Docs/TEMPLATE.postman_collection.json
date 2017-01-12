@@ -1,0 +1,336 @@
+{
+	"variables": [],
+	"info": {
+		"name": "TEMPLATE",
+		"_postman_id": "74a6909b-c800-6886-e962-381305261d7e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DELETE Type Operation",
+			"request": {
+				"url": "http://platform.easynvest.com.br/apis/template/v1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1bmlxdWVfbmFtZSI6InJhZmFlbC5sdWNpbyIsIm5hbWVpZCI6InJhZmFlbC5sdWNpbyIsImdpdmVuX25hbWUiOiJSYWZhZWwgQW50b25pbyBMdWNpbyIsImVtYWlsIjoicmFmYWVsLmx1Y2lvQGVhc3ludmVzdC5jb20uYnIiLCJpYXQiOiIxNDc4ODk5MzgzIiwiY2xpIjoie1wiQ2xpZW50SWRcIjpcIjBiYzNmZmUxZjMwMTRlOTJhNmE3YTkwNjZhNDliMWJjXCIsXCJOYW1lXCI6XCJJbnRyYW5ldFwiLFwiSW50ZXJuYWxcIjp0cnVlfSIsInJvbGUiOlsiVXNlcnMiLCJUaXR1bG9fUmlzY28iLCJUaXR1bG9fQ1JNIiwiU2lzdGVtYV9FY29ub23DoXRpY2EiLCJUaXR1bG9fSW5mb3JtYXRpY2EiLCJTaXN0ZW1hX1NpbmFjb3IiLCJUaXR1bG9fU3lzZG9tIiwiQ0VSVFNWQ19EQ09NX0FDQ0VTUyIsIlRpdHVsb19Qcm9kdXRvIiwiVGl0dWxvX0ZheCIsIlRpdHVsb1NBIiwiRU1TX1BFTkRFTkNZX1JFQUQiLCJFTVNfQ1VTVE9NRVJfV1JJVEUiLCJHcnBfSW5mb3JtYXRpY2EiLCJHcnBfVEkiLCJHUlBfV1NTX1RJX01lbWJlcnMiLCJEb21haW4gVXNlcnMiLCJHcnBfQ1JNIiwiRU1TX0NVU1RPTUVSX1JFQUQiLCJHcnBfU2luYWNvciIsIkVNU19QRU5ERU5DWV9XUklURSIsIkdycF9TeXNkb20iXSwiaXNzIjoiaHR0cDovL2FwaS1ob21vbG9nLmVhc3ludmVzdC5jb20uYnIvYXV0aCIsImF1ZCI6Imh0dHA6Ly93d3cuZWFzeW52ZXN0LmNvbS5iciIsImV4cCI6MTQ3ODkwMjk4M30.3-9mEl6HM7448G9gECxV_WEoMFXn3V_PgIJYBID8FkA",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"typeOperationDelete\":\"DataItem\",\r\n    \"itemsGuid\":[\r\n    \t\"0b1d13d0499b4f85907075b6634750dc\"\r\n    ]\r\n}\r\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET Template",
+			"request": {
+				"url": "platform.easynvest.com.br/apis/template/v1?name=Cadastro",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1bmlxdWVfbmFtZSI6InJhZmFlbC5sdWNpbyIsIm5hbWVpZCI6InJhZmFlbC5sdWNpbyIsImdpdmVuX25hbWUiOiJSYWZhZWwgQW50b25pbyBMdWNpbyIsImVtYWlsIjoicmFmYWVsLmx1Y2lvQGVhc3ludmVzdC5jb20uYnIiLCJpYXQiOiIxNDc5NDc2MzEyIiwiY2xpIjoie1wiQ2xpZW50SWRcIjpcIjBiYzNmZmUxZjMwMTRlOTJhNmE3YTkwNjZhNDliMWJjXCIsXCJOYW1lXCI6XCJJbnRyYW5ldFwiLFwiSW50ZXJuYWxcIjp0cnVlfSIsInJvbGUiOlsiVXNlcnMiLCJUaXR1bG9fUmlzY28iLCJUaXR1bG9fQ1JNIiwiU2lzdGVtYV9FY29ub23DoXRpY2EiLCJUaXR1bG9fSW5mb3JtYXRpY2EiLCJTaXN0ZW1hX1NpbmFjb3IiLCJUaXR1bG9fU3lzZG9tIiwiQ0VSVFNWQ19EQ09NX0FDQ0VTUyIsIlRpdHVsb19Qcm9kdXRvIiwiVGl0dWxvX0ZheCIsIlRpdHVsb1NBIiwiRU1TX1BFTkRFTkNZX1JFQUQiLCJFTVNfQ1VTVE9NRVJfV1JJVEUiLCJHcnBfSW5mb3JtYXRpY2EiLCJHcnBfVEkiLCJHUlBfV1NTX1RJX01lbWJlcnMiLCJEb21haW4gVXNlcnMiLCJHcnBfQ1JNIiwiRU1TX0NVU1RPTUVSX1JFQUQiLCJHcnBfU2luYWNvciIsIkVNU19QRU5ERU5DWV9XUklURSIsIkdycF9TeXNkb20iXSwiaXNzIjoiaHR0cDovL2FwaS1ob21vbG9nLmVhc3ludmVzdC5jb20uYnIvYXV0aCIsImF1ZCI6Imh0dHA6Ly93d3cuZWFzeW52ZXN0LmNvbS5iciIsImV4cCI6MTQ3OTQ3OTkxMn0.fxOT2FEKSZ2Ut4ZEzr1JP5UdLVMRdI67NO4Qn4fO2HA",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET Cep",
+			"request": {
+				"url": "http://platform.easynvest.com.br/apis/template/v1?postalCode=07942070",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1bmlxdWVfbmFtZSI6InJhZmFlbC5sdWNpbyIsIm5hbWVpZCI6InJhZmFlbC5sdWNpbyIsImdpdmVuX25hbWUiOiJSYWZhZWwgQW50b25pbyBMdWNpbyIsImVtYWlsIjoicmFmYWVsLmx1Y2lvQGVhc3ludmVzdC5jb20uYnIiLCJpYXQiOiIxNDc4MTkzNDk2IiwiY2xpIjoie1wiQ2xpZW50SWRcIjpcIjBiYzNmZmUxZjMwMTRlOTJhNmE3YTkwNjZhNDliMWJjXCIsXCJOYW1lXCI6XCJJbnRyYW5ldFwiLFwiSW50ZXJuYWxcIjp0cnVlfSIsInJvbGUiOlsiVXNlcnMiLCJUaXR1bG9fUmlzY28iLCJUaXR1bG9fQ1JNIiwiU2lzdGVtYV9FY29ub23DoXRpY2EiLCJUaXR1bG9fSW5mb3JtYXRpY2EiLCJTaXN0ZW1hX1NpbmFjb3IiLCJUaXR1bG9fU3lzZG9tIiwiQ0VSVFNWQ19EQ09NX0FDQ0VTUyIsIlRpdHVsb19Qcm9kdXRvIiwiVGl0dWxvX0ZheCIsIlRpdHVsb1NBIiwiRU1TX1BFTkRFTkNZX1JFQUQiLCJFTVNfQ1VTVE9NRVJfV1JJVEUiLCJHcnBfSW5mb3JtYXRpY2EiLCJHcnBfVEkiLCJHUlBfV1NTX1RJX01lbWJlcnMiLCJEb21haW4gVXNlcnMiLCJHcnBfQ1JNIiwiRU1TX0NVU1RPTUVSX1JFQUQiLCJHcnBfU2luYWNvciIsIkVNU19QRU5ERU5DWV9XUklURSIsIkdycF9TeXNkb20iXSwiaXNzIjoiaHR0cDovL2FwaS1ob21vbG9nLmVhc3ludmVzdC5jb20uYnIvYXV0aCIsImF1ZCI6Imh0dHA6Ly93d3cuZWFzeW52ZXN0LmNvbS5iciIsImV4cCI6MTQ3ODE5NzA5Nn0.CJZjXt0cHw4AMmKlP69BP_CqS-Zdj3_ArmwsIMhqFRU",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Post Options",
+			"request": {
+				"url": "http://platform.easynvest.com.br/apis/template/v1/dataitem/options",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1bmlxdWVfbmFtZSI6InJhZmFlbC5sdWNpbyIsIm5hbWVpZCI6InJhZmFlbC5sdWNpbyIsImdpdmVuX25hbWUiOiJSYWZhZWwgQW50b25pbyBMdWNpbyIsImVtYWlsIjoicmFmYWVsLmx1Y2lvQGVhc3ludmVzdC5jb20uYnIiLCJpYXQiOiIxNDc5NDc2MzEyIiwiY2xpIjoie1wiQ2xpZW50SWRcIjpcIjBiYzNmZmUxZjMwMTRlOTJhNmE3YTkwNjZhNDliMWJjXCIsXCJOYW1lXCI6XCJJbnRyYW5ldFwiLFwiSW50ZXJuYWxcIjp0cnVlfSIsInJvbGUiOlsiVXNlcnMiLCJUaXR1bG9fUmlzY28iLCJUaXR1bG9fQ1JNIiwiU2lzdGVtYV9FY29ub23DoXRpY2EiLCJUaXR1bG9fSW5mb3JtYXRpY2EiLCJTaXN0ZW1hX1NpbmFjb3IiLCJUaXR1bG9fU3lzZG9tIiwiQ0VSVFNWQ19EQ09NX0FDQ0VTUyIsIlRpdHVsb19Qcm9kdXRvIiwiVGl0dWxvX0ZheCIsIlRpdHVsb1NBIiwiRU1TX1BFTkRFTkNZX1JFQUQiLCJFTVNfQ1VTVE9NRVJfV1JJVEUiLCJHcnBfSW5mb3JtYXRpY2EiLCJHcnBfVEkiLCJHUlBfV1NTX1RJX01lbWJlcnMiLCJEb21haW4gVXNlcnMiLCJHcnBfQ1JNIiwiRU1TX0NVU1RPTUVSX1JFQUQiLCJHcnBfU2luYWNvciIsIkVNU19QRU5ERU5DWV9XUklURSIsIkdycF9TeXNkb20iXSwiaXNzIjoiaHR0cDovL2FwaS1ob21vbG9nLmVhc3ludmVzdC5jb20uYnIvYXV0aCIsImF1ZCI6Imh0dHA6Ly93d3cuZWFzeW52ZXN0LmNvbS5iciIsImV4cCI6MTQ3OTQ3OTkxMn0.fxOT2FEKSZ2Ut4ZEzr1JP5UdLVMRdI67NO4Qn4fO2HA",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dataItemGuid\": \"5df83e6cfb5b4fd9a2e87001cbd007b7\",\r\n    \"lookupKey\": null,\r\n    \"itensCustomRules\": [\r\n    \t{\r\n           \"show\": [],\r\n           \"hide\": [],\r\n           \"description\": \"Description - 1\",\r\n           \"value\": \"VAI CURINTIA\"\r\n\t    }, \r\n\t    {\r\n           \"show\": [],\r\n           \"hide\": [],\r\n           \"description\": \"Description - 2\",\r\n           \"value\": \"ITEM 2\"\r\n\t    }, \r\n\t    {\r\n           \"show\": [],\r\n           \"hide\": [],\r\n           \"description\": \"Description - 3\",\r\n           \"value\": \"ITEM 3\"\r\n\t    }\r\n    ]\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST Template",
+			"request": {
+				"url": "http://platform.easynvest.com.br/apis/template/v1",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1bmlxdWVfbmFtZSI6IjIyODE1MjQ5ODEyIiwibmFtZWlkIjoiMjI4MTUyNDk4MTIiLCJnaXZlbl9uYW1lIjoiV2VsbGluZ3RvbiBOYXNjaW1lbnRvIiwiZW1haWwiOiJ3ZWxsaW5ndG9uLmplc3VzQGVhc3ludmVzdC5jb20uYnIiLCJpYXQiOiIxNDc2NDg2NTQwIiwiY2xpIjoie1wiQ2xpZW50SWRcIjpcIjg3NmRhYjIxOTA0NjQ4ODRiZjliMDkyYWExNDA3NTg1XCIsXCJOYW1lXCI6XCJQb3J0YWwvSG9tZSBCcm9rZXJcIixcIkludGVybmFsXCI6ZmFsc2V9IiwiZXNnIjoiQU5IZmtnWG9YZ0lOT0ZZNkpnTDI0K2tBeUxEUkIwK242c0xaWHpFeWFlRjMwWjVRV2ZvPSIsInByZCI6WyJ7XCJJZFwiOjIsXCJOYW1lXCI6XCJDb250YSBNYXJnZW1cIn0iLCJ7XCJJZFwiOjIyLFwiTmFtZVwiOlwiSW52ZXN0aW1lbnRvIFByb2dyYW1hZG9cIn0iLCJ7XCJJZFwiOjEsXCJOYW1lXCI6XCJBbHVndWVsIGRlIEHDp8O1ZXMgKFRvbWFkb3IpXCJ9Iiwie1wiSWRcIjoxNSxcIk5hbWVcIjpcIkHDp8O1ZXMgLyBFVEYgLyBGSUlcIn0iLCJ7XCJJZFwiOjksXCJOYW1lXCI6XCJNZW5zYWdlbnMgdmlhIFNNU1wifSIsIntcIklkXCI6NCxcIk5hbWVcIjpcIlRlc291cm8gRGlyZXRvXCJ9Il0sImFkdiI6IiIsImVnZyI6ImJxVm5BOVBzd3AxWXVkc3dkYTZ0LzNqV05KRUZPenZPN2FPZHNZNVFDYkhCMEJ5dk5aeDBOL3p1QnhveUlBNHgwZldXbzVCQmh1SHJtcE5kUkZrYkdZaU9SL2FGYnlzRitYQUk4RVFXekt4ZHdrWE11UjNRTTdpZ2RHaHdMUFdidEgvbU5SNHcvK1YzY2ZIdVZlRFBOTmJWZUtLWHg4NlhWY2VHMkhDcWVtbHlRQitVMENlKzVoWWhZeVh3Ulplak5MeDVHTHE2RkFUcXJtODVOcWF5N3VxSE1vMU4zY2lqRm94YzdUdjVNWFZpL0dHaDQvanFyNTU0aDN6RUtWZkNMaFZZNlJXT0praXlweDhYMDRUeGR1eWY5Sm53R3VUTCtyOEo3UmdQcERrPSIsImlzcyI6Imh0dHA6Ly9hcGktaG9tb2xvZy5lYXN5bnZlc3QuY29tLmJyL2F1dGgiLCJhdWQiOiJodHRwOi8vd3d3LmVhc3ludmVzdC5jb20uYnIiLCJleHAiOjE0NzY0OTAxNDB9.SOoUaS3Q3jMj_PkKOhbMBgo0DZFV_pKozOH6ZhEBnG8",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"Teste\"\r\n}\r\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST Form",
+			"request": {
+				"url": "http://platform.easynvest.com.br/apis/template/v1/form",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1bmlxdWVfbmFtZSI6InJhZmFlbC5sdWNpbyIsIm5hbWVpZCI6InJhZmFlbC5sdWNpbyIsImdpdmVuX25hbWUiOiJSYWZhZWwgQW50b25pbyBMdWNpbyIsImVtYWlsIjoicmFmYWVsLmx1Y2lvQGVhc3ludmVzdC5jb20uYnIiLCJpYXQiOiIxNDc4OTAwODI0IiwiY2xpIjoie1wiQ2xpZW50SWRcIjpcIjBiYzNmZmUxZjMwMTRlOTJhNmE3YTkwNjZhNDliMWJjXCIsXCJOYW1lXCI6XCJJbnRyYW5ldFwiLFwiSW50ZXJuYWxcIjp0cnVlfSIsInJvbGUiOlsiVXNlcnMiLCJUaXR1bG9fUmlzY28iLCJUaXR1bG9fQ1JNIiwiU2lzdGVtYV9FY29ub23DoXRpY2EiLCJUaXR1bG9fSW5mb3JtYXRpY2EiLCJTaXN0ZW1hX1NpbmFjb3IiLCJUaXR1bG9fU3lzZG9tIiwiQ0VSVFNWQ19EQ09NX0FDQ0VTUyIsIlRpdHVsb19Qcm9kdXRvIiwiVGl0dWxvX0ZheCIsIlRpdHVsb1NBIiwiRU1TX1BFTkRFTkNZX1JFQUQiLCJFTVNfQ1VTVE9NRVJfV1JJVEUiLCJHcnBfSW5mb3JtYXRpY2EiLCJHcnBfVEkiLCJHUlBfV1NTX1RJX01lbWJlcnMiLCJEb21haW4gVXNlcnMiLCJHcnBfQ1JNIiwiRU1TX0NVU1RPTUVSX1JFQUQiLCJHcnBfU2luYWNvciIsIkVNU19QRU5ERU5DWV9XUklURSIsIkdycF9TeXNkb20iXSwiaXNzIjoiaHR0cDovL2FwaS1ob21vbG9nLmVhc3ludmVzdC5jb20uYnIvYXV0aCIsImF1ZCI6Imh0dHA6Ly93d3cuZWFzeW52ZXN0LmNvbS5iciIsImV4cCI6MTQ3ODkwNDQyNH0.a0QKslDS4eJQXqxpcGMcP5s4H93RG2Mm95qqVDREju4",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"templateId\": 38,\r\n    \"name\": \"Whoami\"\r\n}\r\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST DataItem",
+			"request": {
+				"url": "http://platform.easynvest.com.br/apis/template/v1/dataitem",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1bmlxdWVfbmFtZSI6InJhZmFlbC5sdWNpbyIsIm5hbWVpZCI6InJhZmFlbC5sdWNpbyIsImdpdmVuX25hbWUiOiJSYWZhZWwgQW50b25pbyBMdWNpbyIsImVtYWlsIjoicmFmYWVsLmx1Y2lvQGVhc3ludmVzdC5jb20uYnIiLCJpYXQiOiIxNDc5NDc2MzEyIiwiY2xpIjoie1wiQ2xpZW50SWRcIjpcIjBiYzNmZmUxZjMwMTRlOTJhNmE3YTkwNjZhNDliMWJjXCIsXCJOYW1lXCI6XCJJbnRyYW5ldFwiLFwiSW50ZXJuYWxcIjp0cnVlfSIsInJvbGUiOlsiVXNlcnMiLCJUaXR1bG9fUmlzY28iLCJUaXR1bG9fQ1JNIiwiU2lzdGVtYV9FY29ub23DoXRpY2EiLCJUaXR1bG9fSW5mb3JtYXRpY2EiLCJTaXN0ZW1hX1NpbmFjb3IiLCJUaXR1bG9fU3lzZG9tIiwiQ0VSVFNWQ19EQ09NX0FDQ0VTUyIsIlRpdHVsb19Qcm9kdXRvIiwiVGl0dWxvX0ZheCIsIlRpdHVsb1NBIiwiRU1TX1BFTkRFTkNZX1JFQUQiLCJFTVNfQ1VTVE9NRVJfV1JJVEUiLCJHcnBfSW5mb3JtYXRpY2EiLCJHcnBfVEkiLCJHUlBfV1NTX1RJX01lbWJlcnMiLCJEb21haW4gVXNlcnMiLCJHcnBfQ1JNIiwiRU1TX0NVU1RPTUVSX1JFQUQiLCJHcnBfU2luYWNvciIsIkVNU19QRU5ERU5DWV9XUklURSIsIkdycF9TeXNkb20iXSwiaXNzIjoiaHR0cDovL2FwaS1ob21vbG9nLmVhc3ludmVzdC5jb20uYnIvYXV0aCIsImF1ZCI6Imh0dHA6Ly93d3cuZWFzeW52ZXN0LmNvbS5iciIsImV4cCI6MTQ3OTQ3OTkxMn0.fxOT2FEKSZ2Ut4ZEzr1JP5UdLVMRdI67NO4Qn4fO2HA",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formId\": 44,\n\t\"lookupKey\": null,\n    \"name\": \"CITYANDSTATE01\",\n    \"elementType\": \"TEXT\",\n    \"type\": \"TITLE\",\n    \"message\": \"LOOKUP LIST\",\n    \"textAlign\": null,\n    \"marginTop\": 70,\n    \"value\": null,\n    \"required\": true,\n    \"serverValidation\": false,\n    \"min\": 50,\n    \"max\": 100,\n    \"pattern\": null,\n    \"mask\": null,\n    \"hidden\": false,\n    \"goToNextForm\": false,\n    \"link\": null,\n    \"tooltip\": null\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST Next Step",
+			"request": {
+				"url": "http://platform.easynvest.com.br/apis/template/v1/nextstep",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1bmlxdWVfbmFtZSI6InJhZmFlbC5sdWNpbyIsIm5hbWVpZCI6InJhZmFlbC5sdWNpbyIsImdpdmVuX25hbWUiOiJSYWZhZWwgQW50b25pbyBMdWNpbyIsImVtYWlsIjoicmFmYWVsLmx1Y2lvQGVhc3ludmVzdC5jb20uYnIiLCJpYXQiOiIxNDc4Nzk3NDM2IiwiY2xpIjoie1wiQ2xpZW50SWRcIjpcIjBiYzNmZmUxZjMwMTRlOTJhNmE3YTkwNjZhNDliMWJjXCIsXCJOYW1lXCI6XCJJbnRyYW5ldFwiLFwiSW50ZXJuYWxcIjp0cnVlfSIsInJvbGUiOlsiVXNlcnMiLCJUaXR1bG9fUmlzY28iLCJUaXR1bG9fQ1JNIiwiU2lzdGVtYV9FY29ub23DoXRpY2EiLCJUaXR1bG9fSW5mb3JtYXRpY2EiLCJTaXN0ZW1hX1NpbmFjb3IiLCJUaXR1bG9fU3lzZG9tIiwiQ0VSVFNWQ19EQ09NX0FDQ0VTUyIsIlRpdHVsb19Qcm9kdXRvIiwiVGl0dWxvX0ZheCIsIlRpdHVsb1NBIiwiRU1TX1BFTkRFTkNZX1JFQUQiLCJFTVNfQ1VTVE9NRVJfV1JJVEUiLCJHcnBfSW5mb3JtYXRpY2EiLCJHcnBfVEkiLCJHUlBfV1NTX1RJX01lbWJlcnMiLCJEb21haW4gVXNlcnMiLCJHcnBfQ1JNIiwiRU1TX0NVU1RPTUVSX1JFQUQiLCJHcnBfU2luYWNvciIsIkVNU19QRU5ERU5DWV9XUklURSIsIkdycF9TeXNkb20iXSwiaXNzIjoiaHR0cDovL2FwaS1ob21vbG9nLmVhc3ludmVzdC5jb20uYnIvYXV0aCIsImF1ZCI6Imh0dHA6Ly93d3cuZWFzeW52ZXN0LmNvbS5iciIsImV4cCI6MTQ3ODgwMTAzNn0.TqVQ8YPUZsG7CHwUJDbd7gYWHOftMKECtbgPYvFT_Jg",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"ParentFormId\": \"f5a569d07c2f4c0283734cdf8a95b067\",\r\n\t\"FormId\": \"\",\r\n\t\"DataItensToCheck\": [\"3526426746d74f618fa7df70336fc97e\"],\r\n\t\"PossibleForm\": {\r\n\t\t\"1\": {\r\n\t\t\t\"Teste\": \"1\"\r\n\t\t},\r\n\t\t\"2\": \"9\"\r\n\t}\r\n}"
+				},
+				"description": "Criar Next Step Template com Data Itens to Check e Possible Forms:"
+			},
+			"response": []
+		},
+		{
+			"name": "POST Next Step (somente form)",
+			"request": {
+				"url": "http://platform.easynvest.com.br/apis/template/v1/nextstep",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1bmlxdWVfbmFtZSI6InJhZmFlbC5sdWNpbyIsIm5hbWVpZCI6InJhZmFlbC5sdWNpbyIsImdpdmVuX25hbWUiOiJSYWZhZWwgQW50b25pbyBMdWNpbyIsImVtYWlsIjoicmFmYWVsLmx1Y2lvQGVhc3ludmVzdC5jb20uYnIiLCJpYXQiOiIxNDc4Nzk3NDM2IiwiY2xpIjoie1wiQ2xpZW50SWRcIjpcIjBiYzNmZmUxZjMwMTRlOTJhNmE3YTkwNjZhNDliMWJjXCIsXCJOYW1lXCI6XCJJbnRyYW5ldFwiLFwiSW50ZXJuYWxcIjp0cnVlfSIsInJvbGUiOlsiVXNlcnMiLCJUaXR1bG9fUmlzY28iLCJUaXR1bG9fQ1JNIiwiU2lzdGVtYV9FY29ub23DoXRpY2EiLCJUaXR1bG9fSW5mb3JtYXRpY2EiLCJTaXN0ZW1hX1NpbmFjb3IiLCJUaXR1bG9fU3lzZG9tIiwiQ0VSVFNWQ19EQ09NX0FDQ0VTUyIsIlRpdHVsb19Qcm9kdXRvIiwiVGl0dWxvX0ZheCIsIlRpdHVsb1NBIiwiRU1TX1BFTkRFTkNZX1JFQUQiLCJFTVNfQ1VTVE9NRVJfV1JJVEUiLCJHcnBfSW5mb3JtYXRpY2EiLCJHcnBfVEkiLCJHUlBfV1NTX1RJX01lbWJlcnMiLCJEb21haW4gVXNlcnMiLCJHcnBfQ1JNIiwiRU1TX0NVU1RPTUVSX1JFQUQiLCJHcnBfU2luYWNvciIsIkVNU19QRU5ERU5DWV9XUklURSIsIkdycF9TeXNkb20iXSwiaXNzIjoiaHR0cDovL2FwaS1ob21vbG9nLmVhc3ludmVzdC5jb20uYnIvYXV0aCIsImF1ZCI6Imh0dHA6Ly93d3cuZWFzeW52ZXN0LmNvbS5iciIsImV4cCI6MTQ3ODgwMTAzNn0.TqVQ8YPUZsG7CHwUJDbd7gYWHOftMKECtbgPYvFT_Jg",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"ParentFormGuid\": \"8c78b53da9af493c87f0effd3f4ce607\",\r\n\t\"FormGuid\": \"017c44c30aca4b94be35242e3c39c197\",\r\n\t\"DataItensToCheck\": null,\r\n\t\"PossibleForm\": null\r\n}"
+				},
+				"description": "Criar Next Step Template com apenas o próximo Form"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Next Step",
+			"request": {
+				"url": "http://platform.easynvest.com.br/apis/template/v1/nextstep",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1bmlxdWVfbmFtZSI6InJhZmFlbC5sdWNpbyIsIm5hbWVpZCI6InJhZmFlbC5sdWNpbyIsImdpdmVuX25hbWUiOiJSYWZhZWwgQW50b25pbyBMdWNpbyIsImVtYWlsIjoicmFmYWVsLmx1Y2lvQGVhc3ludmVzdC5jb20uYnIiLCJpYXQiOiIxNDc3NjA2OTMxIiwiY2xpIjoie1wiQ2xpZW50SWRcIjpcIjBiYzNmZmUxZjMwMTRlOTJhNmE3YTkwNjZhNDliMWJjXCIsXCJOYW1lXCI6XCJJbnRyYW5ldFwiLFwiSW50ZXJuYWxcIjp0cnVlfSIsInJvbGUiOlsiVXNlcnMiLCJUaXR1bG9fUmlzY28iLCJUaXR1bG9fQ1JNIiwiU2lzdGVtYV9FY29ub23DoXRpY2EiLCJUaXR1bG9fSW5mb3JtYXRpY2EiLCJTaXN0ZW1hX1NpbmFjb3IiLCJUaXR1bG9fU3lzZG9tIiwiQ0VSVFNWQ19EQ09NX0FDQ0VTUyIsIlRpdHVsb19Qcm9kdXRvIiwiVGl0dWxvX0ZheCIsIlRpdHVsb1NBIiwiRU1TX1BFTkRFTkNZX1JFQUQiLCJFTVNfQ1VTVE9NRVJfV1JJVEUiLCJHcnBfSW5mb3JtYXRpY2EiLCJHcnBfVEkiLCJHUlBfV1NTX1RJX01lbWJlcnMiLCJEb21haW4gVXNlcnMiLCJqaXJhLXNlcnZpY2VkZXNrLXVzZXJzIiwiR3JwX0NSTSIsIkVNU19DVVNUT01FUl9SRUFEIiwiR3JwX1NpbmFjb3IiLCJFTVNfUEVOREVOQ1lfV1JJVEUiLCJHcnBfU3lzZG9tIl0sImlzcyI6Imh0dHA6Ly9hcGktaG9tb2xvZy5lYXN5bnZlc3QuY29tLmJyL2F1dGgiLCJhdWQiOiJodHRwOi8vd3d3LmVhc3ludmVzdC5jb20uYnIiLCJleHAiOjE0Nzc2MTA1MzF9.ub3jy9I72D92NdrpYxS-7cXIU0HWMsv9UnebMUtNj6I",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"ParentFormGuid\": \"5e93604152c949d9b084726854641ff2\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST Validate Field",
+			"request": {
+				"url": "http://platform.easynvest.com.br/apis/preregistry/v1/validatefield",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1bmlxdWVfbmFtZSI6InJhZmFlbC5sdWNpbyIsIm5hbWVpZCI6InJhZmFlbC5sdWNpbyIsImdpdmVuX25hbWUiOiJSYWZhZWwgQW50b25pbyBMdWNpbyIsImVtYWlsIjoicmFmYWVsLmx1Y2lvQGVhc3ludmVzdC5jb20uYnIiLCJpYXQiOiIxNDc5MzI5MDg3IiwiY2xpIjoie1wiQ2xpZW50SWRcIjpcIjBiYzNmZmUxZjMwMTRlOTJhNmE3YTkwNjZhNDliMWJjXCIsXCJOYW1lXCI6XCJJbnRyYW5ldFwiLFwiSW50ZXJuYWxcIjp0cnVlfSIsInJvbGUiOlsiVXNlcnMiLCJUaXR1bG9fUmlzY28iLCJUaXR1bG9fQ1JNIiwiU2lzdGVtYV9FY29ub23DoXRpY2EiLCJUaXR1bG9fSW5mb3JtYXRpY2EiLCJTaXN0ZW1hX1NpbmFjb3IiLCJUaXR1bG9fU3lzZG9tIiwiQ0VSVFNWQ19EQ09NX0FDQ0VTUyIsIlRpdHVsb19Qcm9kdXRvIiwiVGl0dWxvX0ZheCIsIlRpdHVsb1NBIiwiRU1TX1BFTkRFTkNZX1JFQUQiLCJFTVNfQ1VTVE9NRVJfV1JJVEUiLCJHcnBfSW5mb3JtYXRpY2EiLCJHcnBfVEkiLCJHUlBfV1NTX1RJX01lbWJlcnMiLCJEb21haW4gVXNlcnMiLCJHcnBfQ1JNIiwiRU1TX0NVU1RPTUVSX1JFQUQiLCJHcnBfU2luYWNvciIsIkVNU19QRU5ERU5DWV9XUklURSIsIkdycF9TeXNkb20iXSwiaXNzIjoiaHR0cDovL2FwaS1ob21vbG9nLmVhc3ludmVzdC5jb20uYnIvYXV0aCIsImF1ZCI6Imh0dHA6Ly93d3cuZWFzeW52ZXN0LmNvbS5iciIsImV4cCI6MTQ3OTMzMjY4N30.Jg8tGpzCBSyOQV3gy8ExXPpIn9NDtIDu-Lx07CF-MvQ",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Key\": \"CITYANDSTATE\",\n\t\"Value\": \"\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST Complete Step",
+			"request": {
+				"url": "http://platform.easynvest.com.br/apis/preregistry/v1/completestep",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1bmlxdWVfbmFtZSI6InJhZmFlbC5sdWNpbyIsIm5hbWVpZCI6InJhZmFlbC5sdWNpbyIsImdpdmVuX25hbWUiOiJSYWZhZWwgQW50b25pbyBMdWNpbyIsImVtYWlsIjoicmFmYWVsLmx1Y2lvQGVhc3ludmVzdC5jb20uYnIiLCJpYXQiOiIxNDc4MDMxNTY0IiwiY2xpIjoie1wiQ2xpZW50SWRcIjpcIjBiYzNmZmUxZjMwMTRlOTJhNmE3YTkwNjZhNDliMWJjXCIsXCJOYW1lXCI6XCJJbnRyYW5ldFwiLFwiSW50ZXJuYWxcIjp0cnVlfSIsInJvbGUiOlsiVXNlcnMiLCJUaXR1bG9fUmlzY28iLCJUaXR1bG9fQ1JNIiwiU2lzdGVtYV9FY29ub23DoXRpY2EiLCJUaXR1bG9fSW5mb3JtYXRpY2EiLCJTaXN0ZW1hX1NpbmFjb3IiLCJUaXR1bG9fU3lzZG9tIiwiQ0VSVFNWQ19EQ09NX0FDQ0VTUyIsIlRpdHVsb19Qcm9kdXRvIiwiVGl0dWxvX0ZheCIsIlRpdHVsb1NBIiwiRU1TX1BFTkRFTkNZX1JFQUQiLCJFTVNfQ1VTVE9NRVJfV1JJVEUiLCJHcnBfSW5mb3JtYXRpY2EiLCJHcnBfVEkiLCJHUlBfV1NTX1RJX01lbWJlcnMiLCJEb21haW4gVXNlcnMiLCJHcnBfQ1JNIiwiRU1TX0NVU1RPTUVSX1JFQUQiLCJHcnBfU2luYWNvciIsIkVNU19QRU5ERU5DWV9XUklURSIsIkdycF9TeXNkb20iXSwiaXNzIjoiaHR0cDovL2FwaS1ob21vbG9nLmVhc3ludmVzdC5jb20uYnIvYXV0aCIsImF1ZCI6Imh0dHA6Ly93d3cuZWFzeW52ZXN0LmNvbS5iciIsImV4cCI6MTQ3ODAzNTE2NH0.g_gmwULvG_b5MK-bDW9FMH-wDDaiAPOjyJre3XNXDwc",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formSteps\": \n\t[\n\t\t{\n\t\t\t\"order\": 0\n\t\t\t\"formGuid\": \"5e93604152c949d9b084726854641ff2\",\n\t\t},\n\t\t{\n\t\t\t\"order\": 1\n\t\t\t\"formGuid\": \"5e93604152c949d9b084726854641ff2\",\n\t\t}\n\t],\n\t\"data\": \n\t[\n\t\t{\n\t\t\t\"dataItemGuid\": \"227e2b75cc7840788314a51a7c988df4\",\n\t\t\t\"key\": \"CEP\",\n\t\t\t\"value\": \"teste\"\n\t\t},\n\t\t{\n\t\t\t\"dataItemGuid\": \"c5773f698fd0450598f74cd099cdc5f0\",\n\t\t\t\"Key\": \"Endereco\",\n\t\t\t\"value\": \"Outro teste\"\n\t\t}\n\t]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST Display Rule",
+			"request": {
+				"url": "http://localhost:53300/template/v1/display",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1bmlxdWVfbmFtZSI6IndlbGxpbmd0b24uamVzdXMiLCJuYW1laWQiOiJ3ZWxsaW5ndG9uLmplc3VzIiwiZ2l2ZW5fbmFtZSI6IldlbGxpbmd0b24gSmVzdXMgSG9sYW5kYSBkbyBOYXNjaW1lbnRvIiwiZW1haWwiOiJ3ZWxsaW5ndG9uLmplc3VzQGVhc3ludmVzdC5jb20uYnIiLCJpYXQiOiIxNDc2ODEyNTk0IiwiY2xpIjoie1wiQ2xpZW50SWRcIjpcIjBiYzNmZmUxZjMwMTRlOTJhNmE3YTkwNjZhNDliMWJjXCIsXCJOYW1lXCI6XCJJbnRyYW5ldFwiLFwiSW50ZXJuYWxcIjp0cnVlfSIsInJvbGUiOlsiVXNlcnMiLCJUaXR1bG9fUmlzY28iLCJUaXR1bG9fQ1JNIiwiU2lzdGVtYV9FY29ub23DoXRpY2EiLCJUaXR1bG9fSW5mb3JtYXRpY2EiLCJTaXN0ZW1hX1NpbmFjb3IiLCJUaXR1bG9fU3lzZG9tIiwiQ0VSVFNWQ19EQ09NX0FDQ0VTUyIsIlRpdHVsb19BY2Vzc29fU2Vydmlkb3JlcyIsIlRpdHVsb19GYXgiLCJUaXR1bG9TQSIsIkVNU19QRU5ERU5DWV9SRUFEIiwiRU1TX0NVU1RPTUVSX1dSSVRFIiwiR3JwX0luZm9ybWF0aWNhIiwiR3JwX1RJIiwiR1JQX1dTU19USV9NZW1iZXJzIiwiRG9tYWluIFVzZXJzIiwiamlyYS1zZXJ2aWNlZGVzay11c2VycyIsIkdycF9DUk0iLCJFTVNfQ1VTVE9NRVJfUkVBRCIsIkdycF9TaW5hY29yIiwiR1JQX0FjZXNzb19TZXJ2aWRvcmVzIiwiRU1TX1BFTkRFTkNZX1dSSVRFIiwiR3JwX1N5c2RvbSJdLCJpc3MiOiJodHRwOi8vYXBpLWhvbW9sb2cuZWFzeW52ZXN0LmNvbS5ici9hdXRoIiwiYXVkIjoiaHR0cDovL3d3dy5lYXN5bnZlc3QuY29tLmJyIiwiZXhwIjoxNDc2ODE2MTk0fQ.2znZT01fZBYolQ5GZBhldBCZF3gowGXGE8oeRZ169lg",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"parentDataItem\" : \"d638acd532ef4f95afd1f6257f738abe\",\n\t\"show\": [\"d638acd532ef4f95afd1f6257f738abe\", \"d638acd532ef4f95afd1f6257f738a3e\"],\n\t\"hide\": [\"d638acd532ef4f95afd1f6257f7234be\"]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

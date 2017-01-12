@@ -1,0 +1,162 @@
+
+
+// ELEMENT_TYPE=TEXT -> TITLE
+{
+    "formId": 57,
+    "lookupKey": null, 
+    "name": "NAME",
+    "elementType": "TEXT",
+    "type": "TITLE",
+    "message": "Lorem ipsum dolor sit amet, consectetur adipisicing?",
+    "textAlign": null, 
+    "marginTop": 70,   
+    "value": null, 
+    "required": false,
+    "serverValidation": false,
+    "min": null, 
+    "max": null, 
+    "pattern": null, 
+    "mask": null, 
+    "hidden": false,
+    "goToNextForm": false,
+    "link": null, 
+    "tooltip": null
+}    
+
+// Exemplo DATAITEM ELEMENT_TYPE=TEXT -> SUBTITLE
+{
+    "formId": 57,
+    "lookupKey": null,
+    "name": "NAME",
+    "elementType": "TEXT",
+    "type": "SUBTITLE",
+    "message": "Mensagem vai aqui..",
+    "textAlign": null,
+    "marginTop": 70,
+    "value": null,
+    "required": false,
+    "serverValidation": false,
+    "min": null,
+    "max": null,
+    "pattern": null,
+    "mask": null,
+    "hidden": false,
+    "goToNextForm": false,
+    "link": null,
+    "tooltip": null,
+    "customRule": null
+}   
+
+
+// FIELD TEXT
+{
+    "formId": 53,
+    "lookupKey": null,
+    "name": "Name",
+    "elementType": "FIELD",
+    "type": "TEXT",
+    "message": "Lorem ipsum dolor sit amet, consectetur adipisicing?",
+    "textAlign": null,
+    "marginTop": 47,
+    "value": null,
+    "required": true,
+    "serverValidation": false,
+    "min": null,
+    "max": null,
+    "pattern": null,
+    "mask": null,
+    "hidden": false,
+    "goToNextForm": false,
+    "link": null,
+    "tooltip": null
+}
+
+// FIELD DATE
+{
+    "formId": 53,
+    "lookupKey": null,
+    "name": "BirthDate",
+    "elementType": "FIELD",
+    "type": "DATE",
+    "message": "Data de Nascimento",
+    "textAlign": null,
+    "marginTop": 72,
+    "value": null,
+    "required": true,
+    "serverValidation": false,
+    "min": null,
+    "max": null,
+    "pattern": null,
+    "mask": null,
+    "hidden": false,
+    "goToNextForm": false,
+    "link": null,
+    "tooltip": null
+}
+
+// CHECKBOX
+{
+    "formId": 00,
+    "lookupKey": null,
+    "name": "NAME",
+    "elementType": "CHECKBOX",
+    "type": "BOX",
+    "message": null,
+    "textAlign": null,
+    "marginTop": 70,
+    "value": null,
+    "required": false,
+    "serverValidation": false,
+    "min": null,
+    "max": null,
+    "pattern": null,
+    "mask": null,
+    "hidden": false,
+    "goToNextForm": false,
+    "link": null,
+    "tooltip": null,
+    "customRule": null
+}
+
+// RADIO_BUTTON_HORIZONTAL || Lookup (index)
+{
+    "formId": 57,         
+    "guid": "6b6e61ba7ae84d8b8220376458e55adasd",                   
+    "lookupKey": 4,                       
+    "name": "MaritalStatus",                          
+    "elementType" : "RADIO",                 
+    "type" : "BUTTON_HORIZONTAL",            
+    "message": null,                
+    "textAlign": null,                       
+    "marginTop": 70,                         
+    "value": null,                           
+    "required": true,                       
+    "serverValidation": false,               
+    "min": null,                             
+    "max": null,                             
+    "pattern": null,                         
+    "mask": null,                            
+    "hidden": false,                         
+    "goToNextForm" : true,                   
+    "link": null,                            
+    "tooltip": null    
+}
+    // Em seguida executar o post do outro OBJ.
+    {
+        "dataItemGuid": "6b6e61ba7ae84d8b8220376458e55adasd",                // Guid do dataItem
+        "lookupKey": 4,                              // Vincular com a tabela Lookup
+        "itensCustomRules": [                           // Options customizados
+            {
+               "show": ["6b6e61ba7ae84d8b8220376458e55adasd","6b6e61ba7ae84d8b8220376458e55adasd","6b6e61ba7ae84d8b8220376458e55adasd"],
+               "hide": [],
+               "description": "M",
+               "value": "0"
+            }, 
+            {
+               "show": [],
+               "hide": ["6b6e61ba7ae84d8b8220376458e55adasd","6b6e61ba7ae84d8b8220376458e55adasd","6b6e61ba7ae84d8b8220376458e55adasd"],
+               "description": "F",
+               "value": "1"
+            }
+        ]
+    }    

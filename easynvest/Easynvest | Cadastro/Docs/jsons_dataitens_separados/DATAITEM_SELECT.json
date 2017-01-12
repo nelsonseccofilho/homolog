@@ -1,0 +1,18 @@
+// Exemplo DATAITEM ELEMENT_TYPE=SELECT
+{
+	"formId": "NAME",							// id
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "elementType": "SELECT",					// Tipo de elemento que será exibido (TEXT, PICTURE, HYPERLINK, TAKE_PICTURE, SELECT, TEXTAREA, FIELD, CHECKBOX, BUTTON, TIME, SLIDER, INTERNAL_VALIDATION)
+    "message": null,							// Mensagem que será exibida no component (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+    "options": [								// Array de options (quando for cadastrar) será cadastrado depois de tudo cadastrado**
+    	{
+    		"description": "DESCRIÇÃO_QUALQUER",
+    		"value": "VALUE_QUALQUER"
+    	},
+    	{
+    		"description": "DESCRIÇÃO QUALQUER 2",
+    		"value": "VALUE_QUALQUER2"
+    	}
+    ]
+}

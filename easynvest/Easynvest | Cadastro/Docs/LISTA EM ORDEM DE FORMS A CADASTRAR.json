@@ -1,0 +1,60 @@
+// LISTA EM ORDEM DE FORMS A CADASTRAR
+// # = Feito
+// - = Não feito
+// * = Especial
+
+# "formName": PersonalInfo-001-Name
+
+# "formName": PersonalInfo-001-BirthDate
+
+# "formName": PersonalInfo-001-Phone
+
+# "formName": PersonalInfo-001-Nationality
+
+# "formName": PersonalInfo-001-Address
+
+# "formName": FamilyInfo-002-MaritalStatus
+
+# "formName": OccupationlInfo-003-Occupation
+# 	"formName": OccupationInfo-003-1-AddressOccupation
+# 	"formName": OccupationInfo-003-1-Rent
+
+# "formName": DocumentsInfo-004-PersonalDocumentsLessEighteen
+-	"formName": DocumentsInfo-004-PersonalDocumentsFeedback
+
+#  	"formName": DocumentsInfo-004-1-PersonalDocumentsCN
+#   	"formName": DocumentsInfo-004-1-PersonalDocumentsRG
+	# 		"formName": LegalDocumentsInfo-004-2-LegalDocuments
+	# 			"formName": LegalDocumentsInfo-004-3-LegalDocumentsCNH
+	# 				"formName": LegalTakePictute-004-4-LegalTakePictute
+	# 			"formName": LegalDocumentsInfo-004-3-LegalDocumentsRG
+	// DUPLICADO - 	"formName": LegalTakePictute-004-4-LegalTakePictute
+	# 			"formName": LegalDocumentsInfo-004-3-LegalDocumentsRNE
+	// DUPLICADO - 	"formName": LegalTakePictute-004-4-LegalTakePictute
+
+// REMOVIDO # "formName": DocumentsInfo-004-PersonalDocumentsGreaterEighteen
+// DUPLICADO - 	"formName": DocumentsInfo-004-PersonalDocumentsFeedback
+
+// DUPLICADO - 	"formName": DocumentsInfo-004-1-PersonalDocumentsRG
+// # 	"formName": DocumentsInfo-004-1-PersonalDocumentsCNH
+// # 	"formName": DocumentsInfo-004-1-PersonalDocumentsRNE	
+
+// REMOVIDO # "formName": DocumentsInfo-004-PersonalDocumentsForeign
+// DUPLICADO - 	"formName": DocumentsInfo-004-PersonalDocumentsFeedback
+// DUPLICADO - 	"formName": DocumentsInfo-004-1-PersonalDocumentsRG
+// DUPLICADO - 	"formName": DocumentsInfo-004-1-PersonalDocumentsCNH
+// DUPLICADD - 	"formName": DocumentsInfo-004-1-PersonalDocumentsRN
+
+# "formName": BankInfo-005-Bank
+# 	"formName": BankInfo-005-1-OtherBank
+
+# "formName": ExposedPersonInfo-006-ExposedPerson
+// REMOVIDO "formName": ConfirmationData-010-ConfirmationData
+
+# "formName": USATaxesInfo-007-USATaxesInfo
+
+// ROCKET
+# "formName": RocketTimeAnalyze-007-RocketTimeAnalyze
+- 	"formName": RocketTakePicture-007-1-RocketTakePictureIdentificationFront
+- 	"formName": RocketTakePicture-007-1-RocketTakePictureIdentificationBack
+- 	"formName": RocketTakePicture-007-1-RocketTakePictureDocumentFront

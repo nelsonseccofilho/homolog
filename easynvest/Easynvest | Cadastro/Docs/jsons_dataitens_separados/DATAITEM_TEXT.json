@@ -1,0 +1,9 @@
+// Exemplo DATAITEM ELEMENT_TYPE = TEXT
+{
+	"formId": "NAME",							// id
+    "value": null,								// Valor preenchido pelo usuário (String)
+    "elementType": "TEXT",						// Tipo de elemento que será exibido (TEXT)
+    "type": "TITLE",							// Tipo para um ELEMENT_TYPE que será exibido (TITLE, SUBTITLE, TEXT, FOOTER)
+    "message": "Mensagem vai aqui..",			// Mensagem que será exibida no component (String)
+    "tooltip": null,							// Descrição do Tooltip vai aqui (String)
+}	
