@@ -1,0 +1,51 @@
+{
+	"id": "128",
+	"nome_fantasia": "Sottozero (Área C)", 
+ 	"gmv_total": "84.705,80",
+ 	"dia_maior_gmv": "10/16/16",
+ 	"maior_gmv": "1.342,10",
+ 	"total_clientes": "746",
+ 	"tempo_trabalhado": "3.683,60",
+ 	"melhor_cliente": "Julio",
+ 	"pedidos_melhor_cliente": "21",
+ 	"comentarios": ["adoro, peço, sempre!"],
+ 	"company_code":"CES",
+ 	"status": ativo
+},
+{
+	"id": "150",
+	"nome_fantasia": "Almanara", 
+ 	"gmv_total": "2.644.013,55",
+ 	"dia_maior_gmv": "3/20/16",
+ 	"maior_gmv": "19.333,20",
+ 	"total_clientes": "9.200",
+ 	"tempo_trabalhado": "3.563,00",
+ 	"melhor_cliente": "Rodrigo",
+ 	"pedidos_melhor_cliente": "68",
+ 	"comentarios": ["Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 	consequat", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 	consequat", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 	consequat" ],
+ 	"company_code":"CES",
+ 	"status": ativo
+},
+{
+	"id": "200",
+	"nome_fantasia": "Casa Da Feijoada", 
+ 	"gmv_total": "264.108,40",
+ 	"dia_maior_gmv": "8/21/16 0:00",
+ 	"maior_gmv": "4.941,60",
+ 	"total_clientes": "1.325",
+ 	"tempo_trabalhado": "3.684,01",
+ 	"melhor_cliente": "Cristiana",
+ 	"pedidos_melhor_cliente": "64",
+ 	"comentarios": [],
+ 	"company_code":"CES",
+ 	"status": ativo
+}

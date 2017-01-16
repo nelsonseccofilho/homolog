@@ -8,6 +8,11 @@
 
 
 /* ==========================================================================
+   CSS Import styles
+   ========================================================================== */
+@import url("fonts.css");
+
+/* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
 
@@ -20,8 +25,10 @@ textarea {
 }
 
 body {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;    
 }
 
 
@@ -84,27 +91,68 @@ textarea {
     resize: vertical;
 }
 
-
 /* ==========================================================================
    Fonts classes
    ========================================================================== */
+.asapbold{font-family: 'asapbold';}
+.asapbold_italic{font-family: 'asapbold_italic';}
+.asapitalic{font-family: 'asapitalic';}
+.asapmedium{font-family: 'asapmedium';}
+.asapmedium_italic{font-family: 'asapmedium_italic';}
+.asapregular{font-family: 'asapregular';}
+
 .txt-primary-color {color: #ffffff;}
 .txt-secundary-color {color: #d61e38;}
 .txt-invert-primary-color {color: #424242;}
 .txt-invert-secundary-color {color: #424242;}
 
 .section--centered p {
-    font-size: 1.6em;
-    margin: 0 0 .5em;
+    font-size: 1.125em;
+    margin: 0;
 }
-.section--centered .txt--xsmall {font-size: .5em;}
-.section--centered .txt--small {font-size: .85em;}
-.section--centered .txt--large {font-size: 2em;}
-.section--centered .txt--xlarge {font-size: 3em;}
-.section--centered .txt--xxlarge {font-size: 4em;}
-.section--centered .txt--xxxlarge {font-size: 6em;}
-.section--centered .txt--insane {font-size: 8em;}
+.section--centered .txt--xxsmall {font-size: .5em;}
+.section--centered .txt--xsmall {font-size: .85em;}
+.section--centered .txt--large {font-size: 1.5em;}
+.section--centered .txt--xlarge {font-size: 2em;}
+.section--centered .txt--xxlarge {font-size: 3em;}
+.section--centered .txt--xxxlarge {font-size: 3.5em;}
+.section--centered .txt--insane {font-size: 4em;}
+.section--centered .txt--xinsane {font-size: 6.875em;}
+.section--centered .txt--xxinsane {font-size: 7.813em;}
+.section--centered .txt--xxxinsane {font-size: 9.375em;}
 
+.active .__txt--negative--magintop{
+    margin-top: -.25em;
+}
+.__plus .txt--xxinsane{font-size: 10.625em;}
+
+.page-2 .section--centered p{
+    line-height: 1.8em;
+}
+.page-2 .section--centered p:last-child{
+    margin-top: .75em; 
+}
+.page-3 .section--centered p {
+    max-width: 746px;
+    margin: 0 auto;
+}
+// .page-3 .section--centered p.money{max-width: 830px;}
+.page-3 .__plus.__txt--negative--magintop,
+.page-7 .__plus.__txt--negative--magintop{
+    margin-top: -3em;
+}
+.page-11 .txt--xlarge,
+.page-11 .txt--xxlarge{
+    text-align: justify;
+    width: 100%;
+}
+.page-11 .txt--xxlarge,
+.__2017 .txt--xxlarge{font-size: 2.188em;}
+.__2017 .txt--xxxlarge{
+    // font-size: 2.938em;
+    margin-top: 1em ;
+    text-transform: uppercase;
+}
 /* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
@@ -121,7 +169,7 @@ textarea {
    One Page Scroll styles
    ========================================================================== */
 .onepage-wrapper{
-    z-index: 10;
+    z-index: 20;
 }
 .onepage-pagination {
     display: none;
@@ -131,32 +179,177 @@ textarea {
 }
 
 .onepage-pagination li a:before,
-.onepage-pagination li a.active:before {
+.onepage-pagination li a.active:before{
     background: rgba(255, 255, 255, 1);
     border-color: #ffffff;
 }
 
+/* ==========================================================================
+   Slick-dots styles
+   ========================================================================== */
+.slick-dots li button:before{
+    color: rgba(255, 255, 255, .75);
+}
+.slick-dots li.slick-active button:before{
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;    
+}
 
 /* ==========================================================================
    One Page Scroll with Animations styles
    ========================================================================== */
-* {
-    transition: all .4s ease;
-}
-.__anima--pattern {
-    animation: pattern_key 10s linear;
-    animation-iteration-count: infinite;
+// .onepage-wrapper .section{
+//     height: 0;
+// }
+
+.bg--pattern,
+.bg--placeholder{transition: all 1s ease;}
+
+section.page-1 .start--arrow{
+    bottom: 2em;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0);
+    width: 53px;
+    height: 51px;
+    background-image: url('../img/ico-spritesheet-arrow.png');
+    animation: arrow_key 3s steps(23) infinite;
 }
 
-@keyframes pattern_key {
+@keyframes arrow_key {
     0% {
-        background-position: 0px 0px
+        background-position: 0px 0px;
     }
+    50% {
+        background-position: 0 -1173px;
+    }    
     100% {
-        background-position: -200px -801px
+        background-position: 0 -1173px;
     }
 }
 
+.viewing-page-1 section.page-2 .bg--placeholder,
+.viewing-page-3 section.page-4 .bg--placeholder{
+    background-position-y: -80vh;
+}
+
+.viewing-page-3 section.page-2 .bg--placeholder {
+    background-position-y: 80vh;
+}
+
+.viewing-page-3 .bg--placeholder,
+.viewing-page-3 .bg--placeholder2{
+    background-position-y: 20vh;
+}
+
+.viewing-page-3 .bg--placeholder2,
+.viewing-page-4 .bg--placeholder,
+.viewing-page-5 .bg--placeholder,
+.viewing-page-6 .bg--placeholder{
+    background-image: url(../img/bg-05.png);
+    position: fixed;
+    z-index: 2; 
+}
+
+.viewing-page-5 .bg--placeholder,
+.viewing-page-6 .bg--placeholder{
+    background-position-y: -5vh;
+    transform: scale(1.15, 1.15);
+}
+
+.viewing-page-6 .bg--placeholder{
+    background-position-y: -20vh;   
+}
+
+.viewing-page-12 #logo{
+    opacity: 0;
+}
+
+section.page-2 .bg--placeholder {
+    background-image: url(../img/bg-02.png);
+    background-position-y: 800%;
+}
+
+section.bg--pattern{
+    background-position-y: -100vh;
+    height: 0vh;
+}
+section.active.bg--pattern{
+    background-position-y: 0vh;
+    height: 100vh;
+}
+
+.viewing-page-4 .page-3.bg--pattern{
+    background-image: none;
+    height: 0vh;
+    background-color: pink;
+} 
+
+section.page-3{background-image: url(../img/bg-pattern-04.gif);}
+section.page-6 {background-image: url(../img/bg-pattern-07.gif);}
+section.page-7 {background-image: url(../img/bg-pattern-08.gif);}
+section.page-8 {background-image: url(../img/bg-pattern-09.gif);}
+section.page-9 {background-image: url(../img/bg-pattern-10.gif);}
+section.page-10 {background-image: url(../img/bg-pattern-11.gif);}
+section.page-11 {background-image: url(../img/bg-pattern-12.gif);}
+
+section.page-3,   
+section.page-6,       
+section.page-7,       
+section.page-8,       
+section.page-9,       
+section.page-10,          
+section.page-11{
+    background-size: inherit !important;
+    background-repeat: repeat !important; 
+}
+
+// .viewing-page-6 .bg--pattern,
+// .viewing-page-7 .bg--pattern,
+// .viewing-page-8 .bg--pattern,
+// .viewing-page-9 .bg--pattern,
+// .viewing-page-10 .bg--pattern{
+//     background-position-y: 0vh;
+// }
+
+.section--centered .__plus,
+.section--centered p,
+section .section--centered #table-hours tr td{
+    opacity: 0;
+    position: relative;    
+    visibility: hidden;
+    bottom: -4vh;        
+
+    transition: all 2.5s cubic-bezier(.08,.7,.45,1);     
+}
+section.active .section--centered .__plus,
+section.active .section--centered p,
+section.active .section--centered #table-hours tr td{
+    opacity: 1;    
+    visibility: visible;
+}
+
+section.active .section--centered .__plus,
+section.active .section--centered p,
+section.active .section--centered p:nth-child(2),
+section.active .section--centered p:nth-child(3),
+section.active .section--centered #table-hours tr td{  
+    bottom: 0;   
+}
+
+section.active .section--centered p,
+section.active .section--centered #table-hours tr td{
+    transition-delay: .8s;
+}
+.section--centered .__plus,
+section.active .section--centered p:nth-child(2),
+section.active .section--centered #table-hours tr td:nth-child(2){
+    transition-delay: .9s;
+}
+section.active .section--centered p:nth-child(3),
+section.active .section--centered #table-hours tr td:nth-child(3){
+    transition-delay: 1s;
+}
 
 /* Code Samples */
 
@@ -197,16 +390,13 @@ header {
     margin: 2em;
 }
 
-section {
-    opacity: 0;
-    -webkit-transition: opacity .6s;
-    -webkit-transition-delay: .2s;
-    -moz-transition: opacity .6s;
-    -moz-transition-delay: .2s;
-    -o-transition: opacity .6s;
-    -o-transition-delay: .2s;
-    transition: opacity .6s;
-    transition-delay: .2s;
+#logo {
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+#logo img{
+    width: 61px;
 }
 
 section {
@@ -219,11 +409,22 @@ section {
     resize: vertical;
     text-align: center;
     width: 1200px;
+    z-index: 10;
+
+    opacity: 0;
+    -webkit-transition: opacity .6s;
+    -webkit-transition-delay: .2s;
+    -moz-transition: opacity .6s;
+    -moz-transition-delay: .2s;
+    -o-transition: opacity .6s;
+    -o-transition-delay: .2s;
+    transition: opacity .6s;
+    transition-delay: .2s;    
 }
 
 section.__bg--pattern {
     background-repeat: repeat !important;
-    background-size: initial !important;
+    background-size: inherit !important;
 }
 
 section.__login {
@@ -231,22 +432,46 @@ section.__login {
     height: 100vh;
 }
 
-section.elem--01 .start--arrow{
-    bottom: 2em;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, 0);
-}
-
 .section--centered {
     margin: 0 auto;
     padding: 20px 10px;
     resize: vertical;
     width: 960px;
+    z-index: 20;   
+}
+section .next--logo,
+section .ifood--logo{
+    position: absolute;    
+}
+section .next--logo{
+    bottom: 1em;
+    left: 1em;    
+}
+section .ifood--logo{
+    bottom: 1em;
+    right: 1em;
 }
 
 /* ==========================================================================
-   Background classes
+   .section--centered Classes
+   ========================================================================== */
+section.page-1 .section--centered{max-width: 528px;}
+section.page-2 .section--centered{max-width: 750px;}
+section.page-3 .section--centered{max-width: 750px;}
+section.page-4 .section--centered{max-width: 814px;}
+section.page-5 .section--centered{max-width: 914px;}
+section.page-6 .section--centered,
+section.page-8 .section--centered,
+section.page-7 .section--centered,
+section.page-9 .section--centered,
+section.page-10 .section--centered{
+    max-width: 960px;
+    width: 960px;
+}
+section.page-11 .section--centered{max-width: auto;}
+
+/* ==========================================================================
+   Background Classes
    ========================================================================== */
 
 section.gradient--red {
@@ -271,62 +496,24 @@ section.gradient--red.__2017 {
     background-image: url(../img/comp-year-2017-layer.png), linear-gradient(#d04e3c 0%, #bf2638 40%, #961348 100%);    
     background-size: 100% !important;    
 }
+
+section.page-2.active .bg--placeholder{background-position-y: center;}
+
 .bg--placeholder,
+.bg--placeholder2,
 .bg--placeholder__pattern{
     background-position: center;
+    background-repeat: no-repeat;
     background-size: 100%;    
     height: 100%;
     left: 0;
-    // position: fixed;
     top: 0;
     width: 100%;
-    z-index: 5;    
-}
-// .bg--placeholder__pattern{
-//     background-size: initial;
-//     background-repeat: repeat;     
-// }
-section.page-3.active {background-image: url(../img/bg-pattern-04.gif);}
-section.page-6.active {background-image: url(../img/bg-pattern-07.gif);}
-section.page-7.active {background-image: url(../img/bg-pattern-08.gif);}
-section.page-8.active {background-image: url(../img/bg-pattern-09.gif);}
-section.page-9.active {background-image: url(../img/bg-pattern-10.gif);}
-section.page-10.active {background-image: url(../img/bg-pattern-11.gif);}
-section.page-11.active {background-image: url(../img/bg-pattern-12.gif);}
-
-section.page-3.active,  
-section.page-6.active,      
-section.page-7.active,      
-section.page-8.active,      
-section.page-9.active,      
-section.page-10.active,         
-section.page-11.active{
-    background-size: initial !important;
-    background-repeat: repeat !important; 
-}
-
-.viewing-page-2 .bg--placeholder,
-.viewing-page-3 .bg--placeholder,
-.viewing-page-4 .bg--placeholder,
-.viewing-page-5 .bg--placeholder{
+}   
+.bg--placeholder{
     background-size: cover;    
-    position: fixed;
+    position: absolute;  
 }
-.viewing-page-2 .bg--placeholder{
-    background-image: url(../img/bg-02.png);
-}
-.viewing-page-4 .bg--placeholder,
-.viewing-page-5 .bg--placeholder{  
-    background-image: url(../img/bg-05.png);
-}
-
-// .viewing-page-6 .bg--placeholder__pattern {background-image: url(../img/bg-pattern-07.gif);}
-// .viewing-page-7 .bg--placeholder__pattern {background-image: url(../img/bg-pattern-08.gif);}
-// .viewing-page-8 .bg--placeholder__pattern {background-image: url(../img/bg-pattern-09.gif);}
-// .viewing-page-9 .bg--placeholder__pattern {background-image: url(../img/bg-pattern-10.gif);}
-// .viewing-page-10 .bg--placeholder__pattern {background-image: url(../img/bg-pattern-11.gif);}
-// .viewing-page-11 .bg--placeholder__pattern {background-image: url(../img/bg-pattern-12.gif);}
-
 /* ==========================================================================
    Form classes
    ========================================================================== */
@@ -542,17 +729,28 @@ textarea:-ms-input-placeholder {
         width: 100%;
     }
     .section--centered {
-        padding: 0 20%;
-        width: 60%;
+        max-width: 100% !important;
+        padding: 0 5%;
+        width: 90% !important;
     }
     /* ==========================================================================
        Mobile Fonts classes
        ========================================================================== */
-    .section--centered .txt--xlarge{font-size: 2.5em;}
-    .section--centered .txt--xxlarge{font-size: 3em;}
+    .section--centered .txt--xlarge,
+    .section--centered .txt--xxlarge,
     .section--centered .txt--xxxlarge,
-    .section--centered .txt--insane{font-size: 4em;}
-    .section--centered .txt--large.money{font-size: 1.6em;}
+    .section--centered .txt--insane,
+    .section--centered .txt--xinsane,
+    .section--centered .txt--xxinsane,
+    .section--centered .txt--xxxinsane{font-size: 3.5em;}
+    .page-3 .__plus.__txt--negative--magintop, .page-7 .__plus.__txt--negative--magintop{
+        margin-top: .5em;
+    }
+    .page-11 .slick-slide .txt--xlarge{font-size: 1.5em;}
+    .page-11 .slick-slide .txt--xxlarge{
+        font-size: 1.8em;
+        margin-top: 1em;
+    }
 }
 @media only screen and (max-width: 768px) {
     body {
@@ -565,10 +763,6 @@ textarea:-ms-input-placeholder {
     #logo img {
         width: 50%;
     }    
-    .section--centered {
-        padding: 0 10%;
-        width: 80%;
-    }
     /* ==========================================================================
        Mobile Helper classes
        ========================================================================== */
@@ -576,6 +770,14 @@ textarea:-ms-input-placeholder {
     .section--centered .txt--xxlarge{font-size: 3em;}
     .section--centered .txt--xxxlarge,
     .section--centered .txt--insane{font-size: 3.5em;}
+
+    section.gradient--red.__2016{
+        background-position-y: 4%;
+    }
+    section.gradient--red.__2017{
+        background-position-y: 96%;
+    }
+
     .mobile--hidden {
         display: none !important;
         visibility: hidden;
