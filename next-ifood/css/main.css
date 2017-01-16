@@ -121,9 +121,9 @@ textarea {
 .section--centered .txt--xxinsane {font-size: 7.813em;}
 .section--centered .txt--xxxinsane {font-size: 9.375em;}
 
-.active .__txt--negative--magintop{
-    margin-top: -.25em;
-}
+// .active .__txt--negative--magintop{
+//     margin-top: -.25em;
+// }
 .__plus .txt--xxinsane{font-size: 10.625em;}
 
 .page-2 .section--centered p{
@@ -174,7 +174,8 @@ textarea {
 .onepage-pagination {
     display: none;
     right: 2vw;
-    top: 40vh;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 100;
 }
 
@@ -198,11 +199,8 @@ textarea {
 /* ==========================================================================
    One Page Scroll with Animations styles
    ========================================================================== */
-// .onepage-wrapper .section{
-//     height: 0;
-// }
 
-.bg--pattern,
+.bg--pattern{transition: background 1s ease;}
 .bg--placeholder{transition: all 1s ease;}
 
 section.page-1 .start--arrow{
@@ -228,100 +226,22 @@ section.page-1 .start--arrow{
     }
 }
 
-.viewing-page-1 section.page-2 .bg--placeholder,
-.viewing-page-3 section.page-4 .bg--placeholder{
-    background-position-y: -80vh;
-}
-
-.viewing-page-3 section.page-2 .bg--placeholder {
-    background-position-y: 80vh;
-}
-
-.viewing-page-3 .bg--placeholder,
-.viewing-page-3 .bg--placeholder2{
-    background-position-y: 20vh;
-}
-
-.viewing-page-3 .bg--placeholder2,
-.viewing-page-4 .bg--placeholder,
-.viewing-page-5 .bg--placeholder,
-.viewing-page-6 .bg--placeholder{
-    background-image: url(../img/bg-05.png);
-    position: fixed;
-    z-index: 2; 
-}
-
-.viewing-page-5 .bg--placeholder,
-.viewing-page-6 .bg--placeholder{
-    background-position-y: -5vh;
-    transform: scale(1.15, 1.15);
-}
-
-.viewing-page-6 .bg--placeholder{
-    background-position-y: -20vh;   
-}
-
-.viewing-page-12 #logo{
-    opacity: 0;
-}
-
-section.page-2 .bg--placeholder {
-    background-image: url(../img/bg-02.png);
-    background-position-y: 800%;
-}
-
-section.bg--pattern{
-    background-position-y: -100vh;
-    height: 0vh;
-}
-section.active.bg--pattern{
-    background-position-y: 0vh;
-    height: 100vh;
-}
-
-.viewing-page-4 .page-3.bg--pattern{
-    background-image: none;
-    height: 0vh;
-    background-color: pink;
-} 
-
-section.page-3{background-image: url(../img/bg-pattern-04.gif);}
-section.page-6 {background-image: url(../img/bg-pattern-07.gif);}
-section.page-7 {background-image: url(../img/bg-pattern-08.gif);}
-section.page-8 {background-image: url(../img/bg-pattern-09.gif);}
-section.page-9 {background-image: url(../img/bg-pattern-10.gif);}
-section.page-10 {background-image: url(../img/bg-pattern-11.gif);}
-section.page-11 {background-image: url(../img/bg-pattern-12.gif);}
-
-section.page-3,   
-section.page-6,       
-section.page-7,       
-section.page-8,       
-section.page-9,       
-section.page-10,          
-section.page-11{
-    background-size: inherit !important;
-    background-repeat: repeat !important; 
-}
-
-// .viewing-page-6 .bg--pattern,
-// .viewing-page-7 .bg--pattern,
-// .viewing-page-8 .bg--pattern,
-// .viewing-page-9 .bg--pattern,
-// .viewing-page-10 .bg--pattern{
-//     background-position-y: 0vh;
-// }
-
 .section--centered .__plus,
 .section--centered p,
 section .section--centered #table-hours tr td{
-    opacity: 0;
-    position: relative;    
-    visibility: hidden;
-    bottom: -4vh;        
-
-    transition: all 2.5s cubic-bezier(.08,.7,.45,1);     
+    opacity: 1;
+    // transition: opacity 2.5s cubic-bezier(.08,.7,.45,1);           
 }
+
+// .section--centered .__plus,
+// .section--centered p,
+// section .section--centered #table-hours tr td{
+//     opacity: 0;
+//     position: relative;    
+//     visibility: hidden;
+//     bottom: -4vh;        
+//     transition: opacity 2.5s cubic-bezier(.08,.7,.45,1);     
+// }
 section.active .section--centered .__plus,
 section.active .section--centered p,
 section.active .section--centered #table-hours tr td{
@@ -392,11 +312,13 @@ header {
 
 #logo {
     left: 0;
-    top: 0;
     position: absolute;
+    top: 0;
+    width: 75px;
 }
 #logo img{
-    width: 61px;
+    height: auto;
+    width: 75px;
 }
 
 section {
@@ -437,7 +359,7 @@ section.__login {
     padding: 20px 10px;
     resize: vertical;
     width: 960px;
-    z-index: 20;   
+    z-index: 20;  
 }
 section .next--logo,
 section .ifood--logo{
@@ -474,6 +396,21 @@ section.page-11 .section--centered{max-width: auto;}
    Background Classes
    ========================================================================== */
 
+.bg--placeholder,
+.bg--placeholder__pattern{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;    
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}   
+.bg--placeholder{
+    background-size: cover;    
+    position: absolute;  
+}
+
 section.gradient--red {
     background: #d04e3c;
     /* Old browsers */
@@ -499,21 +436,77 @@ section.gradient--red.__2017 {
 
 section.page-2.active .bg--placeholder{background-position-y: center;}
 
-.bg--placeholder,
-.bg--placeholder2,
-.bg--placeholder__pattern{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;    
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 100%;
-}   
-.bg--placeholder{
-    background-size: cover;    
-    position: absolute;  
+section.page-2 .bg--placeholder {
+    background-image: url(../img/bg-02.png);
+    background-position-y: 800%;
 }
+
+section.bg--pattern{
+    background-position-y: -100vh;
+    height: 0vh;
+}
+section.active.bg--pattern{
+    background-position-y: 0vh;
+    z-index: 15;
+}
+
+
+section.page-3{background-image: url(../img/bg-pattern-04.gif);}
+section.page-6 {background-image: url(../img/bg-pattern-07.gif);}
+section.page-7 {background-image: url(../img/bg-pattern-08.gif);}
+section.page-8 {background-image: url(../img/bg-pattern-09.gif);}
+section.page-9 {background-image: url(../img/bg-pattern-10.gif);}
+section.page-10 {background-image: url(../img/bg-pattern-11.gif);}
+section.page-11 {background-image: url(../img/bg-pattern-12.gif);}
+
+section.page-3,   
+section.page-6,       
+section.page-7,       
+section.page-8,       
+section.page-9,       
+section.page-10,          
+section.page-11{
+    background-size: inherit !important;
+    background-repeat: repeat !important; 
+}
+
+.viewing-page-1 section.page-2 .bg--placeholder,
+.viewing-page-3 section.page-4 .bg--placeholder{
+    background-position-y: -80vh;
+}
+
+.viewing-page-3 section.page-2 .bg--placeholder {
+    background-position-y: 80vh;
+}
+
+.viewing-page-3 .bg--placeholder,
+.viewing-page-4 .bg--placeholder,
+.viewing-page-5 .bg--placeholder,
+.viewing-page-6 .bg--placeholder{background-image: url(../img/bg-05.png);}
+
+.viewing-page-5 .bg--placeholder,
+.viewing-page-6 .bg--placeholder{
+    background-position-y: -5vh;
+    transform: scale(1.15, 1.15);
+}
+
+.viewing-page-6 .bg--placeholder{
+    background-position-y: -20vh;   
+}
+
+.viewing-page-12 #logo{
+    opacity: 0;
+}
+
+.viewing-page-4 .page-3.bg--pattern,
+.viewing-page-7 .page-6.bg--pattern,
+.viewing-page-8 .page-7.bg--pattern,
+.viewing-page-9 .page-8.bg--pattern,
+.viewing-page-10 .page-9.bg--pattern,
+.viewing-page-11 .page-10.bg--pattern{
+    height: 100vh;
+    background-position-y: 100vh;
+} 
 /* ==========================================================================
    Form classes
    ========================================================================== */
@@ -608,6 +601,35 @@ textarea:-ms-input-placeholder {
 #table-hours td span.txt--xxlarge.txt-primary-color{
     padding-bottom: .18em;
 }
+
+/* ==========================================================================
+   Video classes
+   ========================================================================== */
+.video--container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+}
+
+.video--container video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  min-height: 100%; 
+  
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+  
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -725,6 +747,14 @@ textarea:-ms-input-placeholder {
    ========================================================================== */
 @media only screen and (max-width: 1024px) {
     /* Style adjustments for viewports that meet the condition */
+    #logo{
+        left: -10px;
+        top: -10px;
+    }
+    #logo img{
+        height: auto;
+        width: 50%;
+    }
     section {
         width: 100%;
     }
@@ -759,10 +789,7 @@ textarea:-ms-input-placeholder {
     }
     .onepage-pagination {
         display: none !important;
-    }    
-    #logo img {
-        width: 50%;
-    }    
+    }
     /* ==========================================================================
        Mobile Helper classes
        ========================================================================== */
@@ -772,12 +799,17 @@ textarea:-ms-input-placeholder {
     .section--centered .txt--insane{font-size: 3.5em;}
 
     section.gradient--red.__2016{
-        background-position-y: 4%;
+        background-position-y: 20%;
+    }
+    section.gradient--red.__2016 .section--centered{
+        padding: 25vh 5% 0;
     }
     section.gradient--red.__2017{
-        background-position-y: 96%;
+        background-position-y: 85%;
     }
-
+    section.gradient--red.__2017 .section--centered{
+        padding: 0 5% 25vh;
+    }
     .mobile--hidden {
         display: none !important;
         visibility: hidden;
