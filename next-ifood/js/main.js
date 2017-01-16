@@ -44,9 +44,9 @@ $(document).ready(function() {
         updateURL: false, // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
         beforeMove: function(index) {
             paginationChecker();
+            startSlider();
         }, // This option accepts a callback function. The function will be called before the page moves.
         afterMove: function(index) {
-            startSlider();
         }, // This option accepts a callback function. The function will be called after the page moves.
 
         loop: false, // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
