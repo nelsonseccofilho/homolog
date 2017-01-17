@@ -1,40 +1,4 @@
-
-function startCounter() {
-   if ($('section.active .count').length) {
-        var cn = $('section.active .count').text();
-        
-        $('section.active .count').each(function() {
-            $(this).prop('counter', 0).animate({
-                counter: cn
-            }, {
-                duration: 4000,
-                easing: 'swing',
-                step: function(now) {
-                    $(this).text(Math.ceil(now));
-                }          
-            });
-        });
-    }
-}
-
-function startSlider() {
-    if ($('section.page-11.active').length){        
-        $(".slick--slider").slick({
-            autoplay: true,
-            autoplaySpeed: 3000,
-            arrows: false,
-            dots: true,
-            speed: 500,
-            swipe: true
-        });
-    }
-}
-
 $(document).ready(function() {
-    // $.get('next-ifoot.txt', function(data) {
-    //     console.log($.parseJSON(data));
-    // }); 
-
     $(".container").onepage_scroll({
         sectionContainer: "section", // sectionContainer accepts any kind of selector in case you don't want to use section
         easing: "ease", // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
@@ -44,7 +8,6 @@ $(document).ready(function() {
         updateURL: false, // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
         beforeMove: function(index) {
             paginationChecker();
-            startSlider();
         }, // This option accepts a callback function. The function will be called before the page moves.
         afterMove: function(index) {
         }, // This option accepts a callback function. The function will be called after the page moves.
@@ -55,6 +18,15 @@ $(document).ready(function() {
         // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
         // the browser's width is less than 600, the fallback will kick in.
         direction: "vertical" // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
+    });
+    
+    $(".slick--slider").slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+        dots: true,
+        speed: 500,
+        swipe: true
     });
 
     //triggers
@@ -85,6 +57,37 @@ function paginationChecker() {
         $('.onepage-pagination').fadeIn();
     }
 }
+
+function startCounter() {
+   if ($('section.active .count').length) {
+        var cn = $('section.active .count').text();
+        
+        $('section.active .count').each(function() {
+            $(this).prop('counter', 0).animate({
+                counter: cn
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function(now) {
+                    $(this).text(Math.ceil(now));
+                }          
+            });
+        });
+    }
+}
+
+// function startSlider() {
+//     if ($('section.page-11.active').length){        
+//         $(".slick--slider").slick({
+//             autoplay: true,
+//             autoplaySpeed: 3000,
+//             arrows: false,
+//             dots: true,
+//             speed: 500,
+//             swipe: true
+//         });
+//     }
+// }
 
 $(window).load(function() {
     // fade in page

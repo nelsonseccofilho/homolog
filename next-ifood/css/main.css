@@ -126,6 +126,19 @@ textarea {
 // }
 .__plus .txt--xxinsane{font-size: 10.625em;}
 
+.section--centered .txt--xxsmall,
+.section--centered .txt--xsmall,
+.section--centered .txt--large,
+.section--centered .txt--xlarge,
+.section--centered .txt--xxlarge,
+.section--centered .txt--xxxlarge,
+.section--centered .txt--insane,
+.section--centered .txt--xinsane,
+.section--centered .txt--xxinsane,
+.section--centered .txt--xxxinsane,
+.__plus .txt--xxinsane{line-height: 1em;}
+
+
 .page-2 .section--centered p{
     line-height: 1.8em;
 }
@@ -141,11 +154,14 @@ textarea {
 .page-7 .__plus.__txt--negative--magintop{
     margin-top: -3em;
 }
-.page-11 .txt--xlarge,
+.page-11 .txt--xlarge{
+    margin-bottom: 1em;
+}
 .page-11 .txt--xxlarge{
     text-align: justify;
     width: 100%;
 }
+.page-11 .txt--xxlarge{margin-top: 1em;}
 .page-11 .txt--xxlarge,
 .__2017 .txt--xxlarge{font-size: 2.188em;}
 .__2017 .txt--xxxlarge{
@@ -153,7 +169,7 @@ textarea {
     margin-top: 1em ;
     text-transform: uppercase;
 }
-/* ==========================================================================
+/* ================= =========================================================
    Chrome Frame prompt
    ========================================================================== */
 
@@ -188,6 +204,9 @@ textarea {
 /* ==========================================================================
    Slick-dots styles
    ========================================================================== */
+.slick-dots{
+    bottom: -3em;
+}
 .slick-dots li button:before{
     color: rgba(255, 255, 255, .75);
 }
@@ -230,7 +249,6 @@ section.page-1 .start--arrow{
 .section--centered p,
 section .section--centered #table-hours tr td{
     opacity: 1;
-    // transition: opacity 2.5s cubic-bezier(.08,.7,.45,1);           
 }
 
 // .section--centered .__plus,
@@ -390,7 +408,10 @@ section.page-10 .section--centered{
     max-width: 960px;
     width: 960px;
 }
-section.page-11 .section--centered{max-width: auto;}
+section.page-11 .section--centered{
+    max-width: 860px;
+    width: 860px;    
+}
 
 /* ==========================================================================
    Background Classes
@@ -552,7 +573,7 @@ textarea {
 }
 
 .buttom--primary {
-    border-color: rgba(233, 107, 43, 1);
+    border: solid 1px rgba(233, 107, 43, 1);
     color: rgba(233, 107, 43, 1);
     width: auto;
 }
@@ -593,15 +614,17 @@ textarea:-ms-input-placeholder {
 
 }
 #table-hours td{
+    text-align: center;
     vertical-align: bottom;
 }
 #table-hours td span{
     display: block;
     width: 100%;
 }
-#table-hours td span.txt--xxlarge.txt-primary-color{
-    padding-bottom: .18em;
-}
+#table-hours td .txt-primary-color.txt--xxxinsane{line-height: 1.1em;}
+// #table-hours td .txt-primary-color.txt--xinsane{text-align: left;}
+// #table-hours td .txt-primary-color.txt--xlarge{text-align: center;}
+#table-hours td.mobile--hidden{padding: 0 50px;}
 
 /* ==========================================================================
    Video classes
@@ -621,7 +644,7 @@ textarea:-ms-input-placeholder {
   min-height: 100%; 
   
   /* Setting width & height to auto prevents the browser from stretching or squishing the video */
-  width: auto;
+  width: 100%;
   height: auto;
   
   /* Center the video */
@@ -634,7 +657,8 @@ textarea:-ms-input-placeholder {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
 
 /*
  * Image replacement
@@ -659,6 +683,11 @@ textarea:-ms-input-placeholder {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
+
+.desktop--hidden {
+    display: none !important;
+    visibility: hidden;
+}
 
 .hidden {
     display: none !important;
@@ -775,13 +804,30 @@ textarea:-ms-input-placeholder {
     .section--centered .txt--insane,
     .section--centered .txt--xinsane,
     .section--centered .txt--xxinsane,
-    .section--centered .txt--xxxinsane{font-size: 3.5em;}
+    .section--centered .txt--xxxinsane{font-size: 2.5em;}
+
+    .section--centered .txt--xxsmall,
+    .section--centered .txt--xsmall,
+    .section--centered .txt--large,
+    .section--centered .txt--xlarge,
+    .section--centered .txt--xxlarge,
+    .section--centered .txt--xxxlarge,
+    .section--centered .txt--insane,
+    .section--centered .txt--xinsane,
+    .section--centered .txt--xxinsane,
+    .section--centered .txt--xxxinsane,
+    .__plus .txt--xxinsane{line-height: 1.5em;}
+
+
+    #table-hours > tbody > tr > td > .txt-primary-color.txt--xlarge.desktop--hidden{
+        font-size: 1em;
+    }
     .page-3 .__plus.__txt--negative--magintop, .page-7 .__plus.__txt--negative--magintop{
         margin-top: .5em;
     }
-    .page-11 .slick-slide .txt--xlarge{font-size: 1.5em;}
-    .page-11 .slick-slide .txt--xxlarge{
-        font-size: 1.8em;
+    .page-11 .txt--xlarge{font-size: 1em;}
+    .page-11 .txt--xxlarge{
+        font-size: 1.5em;
         margin-top: 1em;
     }
 }
@@ -790,17 +836,13 @@ textarea:-ms-input-placeholder {
         font-size: 13px;
         line-height: 1.2;
     }
+
     .onepage-pagination {
         display: none !important;
     }
     /* ==========================================================================
        Mobile Helper classes
-       ========================================================================== */
-    .section--centered .txt--xlarge{font-size: 2.5em;}
-    .section--centered .txt--xxlarge{font-size: 3em;}
-    .section--centered .txt--xxxlarge,
-    .section--centered .txt--insane{font-size: 3.5em;}
-
+       =================    ========================================================= */
     section.gradient--red.__2016{
         background-position-y: 20%;
     }
@@ -813,9 +855,9 @@ textarea:-ms-input-placeholder {
     section.gradient--red.__2017 .section--centered{
         padding: 0 5% 25vh;
     }
-    .mobile--hidden {
-        display: none !important;
-        visibility: hidden;
+    #table-hours > tbody > tr > td > .txt-primary-color.txt--xlarge.desktop--hidden{
+        display: block !important;
+        visibility: visible !important;
     }
     .table--responsible{
         display: block !important;
@@ -825,7 +867,12 @@ textarea:-ms-input-placeholder {
     .table--responsible.__half{
         float: left;
         width: 49.2% !important;
-    }    
+    }        
+    .mobile--hidden {
+        display: none !important;
+        visibility: hidden;
+    }
+    //mobile--show    
 }
 
 @media print,
@@ -859,7 +906,7 @@ textarea:-ms-input-placeholder {
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-    /*
+    /*  
      * Don't show links for images, or javascript/internal links
      */
     .ir a:after,
