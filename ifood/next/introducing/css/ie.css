@@ -1,0 +1,10 @@
+@media all and (min-width:0\0) and (min-resolution: .001dpcm){
+    /* IE9 rule sets go here */
+}
+@media screen and (min-width:0\0) {
+    /* IE9 and IE10 rule sets go here */ 
+}
+
+@media screen and (-ms-high-contrast: active),(-ms-high-contrast: none) {
+    /* IE10-specific styles go here */
+}

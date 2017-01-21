@@ -1,0 +1,1237 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+/* ==========================================================================
+   CSS Import styles
+   ========================================================================== */
+
+@import url("fonts.css");
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    // color: #222;
+}
+
+body {
+    font-size: 15px;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Fonts classes
+   ========================================================================== */
+
+.asapbold {
+    font-family: 'asapbold';
+}
+
+.asapbold_italic {
+    font-family: 'asapbold_italic';
+}
+
+.asapitalic {
+    font-family: 'asapitalic';
+}
+
+.asapmedium {
+    font-family: 'asapmedium';
+}
+
+.asapmedium_italic {
+    font-family: 'asapmedium_italic';
+}
+
+.asapregular {
+    font-family: 'asapregular';
+}
+
+.txt-primary-color {
+    color: #ffffff;
+}
+
+.txt-secundary-color {
+    color: #d61e38;
+}
+
+.txt-invert-primary-color {
+    color: #424242;
+}
+
+.txt-invert-secundary-color {
+    color: #424242;
+}
+
+// header,
+// .container{
+//     display: none;
+//     trasition: display 1s ease;
+// }
+.section--centered p {
+    font-size: 1.125em;
+    margin: 0;
+}
+
+.section--centered .txt--xxsmall {
+    font-size: .5em;
+}
+
+.section--centered .txt--xsmall {
+    font-size: .85em;
+}
+
+.section--centered .txt--small {
+    font-size: 1.188em;
+}
+
+.section--centered .txt--large {
+    font-size: 1.5em;
+}
+
+.section--centered .txt--xlarge {
+    font-size: 2em;
+}
+
+.section--centered .txt--xxlarge {
+    font-size: 3em;
+}
+
+.section--centered .txt--xxxlarge {
+    font-size: 3.5em;
+}
+
+.section--centered .txt--insane {
+    font-size: 4em;
+}
+
+.section--centered .txt--xinsane {
+    font-size: 6.875em;
+}
+
+.section--centered .txt--xxinsane {
+    font-size: 7.813em;
+}
+
+.section--centered .txt--xxxinsane {
+    font-size: 9.375em;
+}
+
+.__plus .txt--xxinsane {
+    font-size: 10.625em;
+}
+
+// .section--centered .txt--xxsmall,
+// .section--centered .txt--xsmall,
+// .section--centered .txt--large,
+// .section--centered .txt--xlarge,
+// .section--centered .txt--xxlarge,
+// .section--centered .txt--xxxlarge{}
+.section--centered .txt--insane,
+.section--centered .txt--xinsane,
+.section--centered .txt--xxinsane,
+.section--centered .txt--xxxinsane,
+.__plus .txt--xxinsane {
+    line-height: 1em;
+}
+
+.page-2 .section--centered p {
+    line-height: 1.8em;
+}
+
+.page-2 .section--centered p:last-child {
+    margin-top: .75em;
+}
+
+.page-3 .section--centered p {
+    max-width: 746px;
+    margin: 0 auto;
+}
+
+.page-4 .section--centered p.txt-primary-color.txt--large {
+    position: relative;
+    bottom: -7px;
+    // font-size: 1.8em;
+}
+
+.page-3 .__plus.__txt--negative--magintop,
+.page-7 .__plus.__txt--negative--magintop {
+    margin-top: -3em;
+}
+
+.page-11 .txt--xlarge {
+    margin-bottom: 1em;
+}
+
+.page-11 .txt--xxlarge {
+    text-align: justify;
+    width: 100%;
+}
+
+.page-11 .txt--xxlarge {
+    margin-top: 1em;
+}
+
+.page-11 .txt--xxlarge,
+.__2017 .txt--xxlarge {
+    font-size: 2.188em;
+}
+
+.__2017 .txt--xxxlarge {
+    // font-size: 2.938em;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+
+/* ================= =========================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   One Page Scroll styles
+   ========================================================================== */
+
+.onepage-wrapper {
+    z-index: 20;
+}
+
+.onepage-pagination {
+    display: none;
+    right: 2vw;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.onepage-pagination li a:before,
+.onepage-pagination li a.active:before {
+    background: rgba(255, 255, 255, 1);
+    border-color: #ffffff;
+}
+
+
+/* ==========================================================================
+   Slick-dots styles
+   ========================================================================== */
+
+.slick-dots {
+    bottom: -3em;
+}
+
+.slick-dots li button:before {
+    color: rgba(255, 255, 255, .75);
+}
+
+.slick-dots li.slick-active button:before {
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+}
+
+
+/* ==========================================================================
+   One Page Scroll with Animations styles
+   ========================================================================== */
+
+.bg--pattern {
+    transition: background 1s ease;
+}
+
+.bg--placeholder {
+    transition: background 1s ease;
+}
+
+section.page-1 .start--arrow {
+    bottom: 2em;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0);
+    width: 53px;
+    height: 51px;
+    background-image: url('../img/ico-spritesheet-arrow.png');
+    animation: arrow_key 3s steps(23) infinite;
+}
+
+@keyframes arrow_key {
+    0% {
+        background-position: 0px 0px;
+    }
+    50% {
+        background-position: 0 -1173px;
+    }
+    100% {
+        background-position: 0 -1173px;
+    }
+}
+
+.section--centered .__plus,
+.section--centered p,
+section .section--centered #table-hours tr td {
+    opacity: 1;
+}
+
+section.active .section--centered .__plus,
+section.active .section--centered p,
+section.active .section--centered #table-hours tr td {
+    opacity: 1;
+    visibility: visible;
+}
+
+section.active .section--centered .__plus,
+section.active .section--centered p,
+section.active .section--centered p:nth-child(2),
+section.active .section--centered p:nth-child(3),
+section.active .section--centered #table-hours tr td {
+    bottom: 0;
+}
+
+section.active .section--centered p
+// section.active .section--centered #table-hours tr td {
+    transition-delay: .8s;
+}
+
+.section--centered .__plus,
+section.active .section--centered p:nth-child(2)
+// section.active .section--centered #table-hours tr td:nth-child(2) {
+    transition-delay: .9s;
+}
+
+section.active .section--centered p:nth-child(3)
+// section.active .section--centered #table-hours tr td:nth-child(3) {
+    transition-delay: 1s;
+}
+
+
+/* Code Samples */
+
+pre {
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    background: #faf8f0;
+    font-size: 14px;
+}
+
+code {
+    display: block;
+    padding: 0.5em 1em;
+    border: 1px solid #bebab0;
+}
+
+header {
+    position: fixed;
+    z-index: 100;
+    margin: 2em;
+}
+
+#logo {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 63px;
+}
+
+#logo img {
+    height: auto;
+    width: 63px;
+}
+
+section {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 100%;
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    resize: vertical;
+    text-align: center;
+    width: 980px;
+    z-index: 10;
+
+    -webkit-transition: opacity .6s;
+    -webkit-transition-delay: .2s;
+    -moz-transition: opacity .6s;
+    -moz-transition-delay: .2s;
+    -o-transition: opacity .6s;
+    -o-transition-delay: .2s;
+    transition: opacity .6s;
+    transition-delay: .2s;
+}
+
+section.__bg--pattern {
+    background-repeat: repeat !important;
+    background-size: inherit !important;
+}
+
+section.__login{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.container--loading {
+    width: 100%;
+}
+
+.container--loading{
+    // background: -webkit-linear-gradient(#d04e3c 0%, #bf2638 40%, #961348 100%);
+    // background: linear-gradient(#d04e3c 0%, #bf2638 40%, #961348 100%);
+    background-color: #d04e3c;
+    height: 0;    
+    padding-bottom: 200px;
+    position: relative;
+    margin-top: -200px;
+    z-index: 1000;
+    
+    transition: all 1s ease;
+}
+.container--loading.loading{
+    height: 100%;
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+
+.container--loading > .section--centered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 100px;
+}
+
+.container--loading .ico--loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 100px;
+    background-image: url('../img/ico-spritesheet-loading.png');
+    animation: loading_key 2.33s steps(69) infinite;
+}
+
+@keyframes loading_key {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 -6900px;
+    }
+}
+
+.section--centered {
+    margin: 0 auto;
+    padding: 20px 10px;
+    resize: vertical;
+    min-width: 640px;
+    width: auto;
+    z-index: 20;
+}
+
+section .next--logo,
+section .ifood--logo {
+    position: absolute;
+}
+
+section .next--logo {
+    bottom: 1em;
+    left: 1em;
+}
+
+section .ifood--logo {
+    bottom: 1em;
+    right: 1em;
+}
+
+// section > *{
+//     opacity: 0;
+//     filter: alpha(opacity=0);
+// }
+// section.active > *{
+//     opacity: 1;
+//     filter: alpha(opacity=1);
+// }
+
+/* ==========================================================================
+   .section--centered Classes
+   ========================================================================== */
+
+section.page-1 .section--centered {
+    max-width: 528px;
+}
+
+section.page-2 .section--centered {
+    max-width: 750px;
+}
+
+section.page-3 .section--centered {
+    max-width: 100%;
+}
+
+section.page-4 .section--centered {
+    max-width: 814px;
+}
+
+section.page-5 .section--centered {
+    max-width: 100%;
+}
+
+section.page-6 .section--centered,
+section.page-8 .section--centered,
+section.page-7 .section--centered,
+section.page-9 .section--centered,
+section.page-10 .section--centered {
+    max-width: 960px;
+    width: 960px;
+}
+
+section.page-11 .section--centered {
+    max-width: 640px;
+    width: 640px;
+}
+
+
+/* ==========================================================================
+   Background Classes
+   ========================================================================== */
+
+.bg--placeholder,
+.bg--placeholder__pattern {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.bg--placeholder {
+    background-size: cover;
+    position: absolute;
+    transition: all 1s ease;
+}
+
+section.gradient--red {
+    background: #d04e3c;
+    /* Old browsers */
+    background: -moz-linear-gradient(#d04e3c 0%, #bf2638 40%, #961348 100%);
+    background: -webkit-linear-gradient(#d04e3c 0%, #bf2638 40%, #961348 100%);
+    background: linear-gradient(#d04e3c 0%, #bf2638 40%, #961348 100%);
+    background-position: center center;
+}
+
+// section.gradient--red.__2016 {
+//     background-image: url(../img/comp-year-2016-layer.png), -moz-linear-gradient(#d04e3c 0%, #bf2638 40%, #961348 100%);
+//     background-image: url(../img/comp-year-2016-layer.png), -webkit-linear-gradient(#d04e3c 0%, #bf2638 40%, #961348 100%);
+//     background-image: url(../img/comp-year-2016-layer.png), linear-gradient(#d04e3c 0%, #bf2638 40%, #961348 100%);
+//     background-size: 100% !important;
+// }
+
+// section.gradient--red.__2017 {
+//     background-image: url(../img/comp-year-2017-layer.png), -moz-linear-gradient(#d04e3c 0%, #bf2638 40%, #961348 100%);
+//     background-image: url(../img/comp-year-2017-layer.png), -webkit-linear-gradient(#d04e3c 0%, #bf2638 40%, #961348 100%);
+//     background-image: url(../img/comp-year-2017-layer.png), linear-gradient(#d04e3c 0%, #bf2638 40%, #961348 100%);
+//     background-size: 100% !important;
+// }
+
+section.page-2.active .bg--placeholder {
+    background-position-y: center;
+}
+
+section.page-2 .bg--placeholder {
+    background-image: url(../img/bg-02.jpg);
+    background-position-y: 800%;
+}
+
+section.bg--pattern {
+    background-position-y: -100vh;
+    height: 0vh;
+}
+
+section.active.bg--pattern {
+    background-position-y: 0vh;
+    z-index: 15;
+}
+
+section.page-3 {
+    background-image: url(../img/bg-pattern-04.gif);
+}
+
+section.page-6 {
+    background-image: url(../img/bg-pattern-07.gif);
+}
+
+section.page-7 {
+    background-image: url(../img/bg-pattern-08.gif);
+}
+
+section.page-8 {
+    background-image: url(../img/bg-pattern-09.gif);
+}
+
+section.page-9 {
+    background-image: url(../img/bg-pattern-10.gif);
+}
+
+section.page-10 {
+    background-image: url(../img/bg-pattern-11.gif);
+}
+
+section.page-11 {
+    background-image: url(../img/bg-pattern-12.gif);
+}
+
+section.page-3,
+section.page-6,
+section.page-7,
+section.page-8,
+section.page-9,
+section.page-10,
+section.page-11 {
+    background-size: inherit !important;
+    background-repeat: repeat !important;
+}
+
+.viewing-page-1 section.page-2 .bg--placeholder,
+.viewing-page-3 section.page-4 .bg--placeholder {
+    background-position-y: -80vh;
+}
+
+.viewing-page-3 section.page-2 .bg--placeholder {
+    background-position-y: 80vh;
+}
+
+.viewing-page-3 .bg--placeholder,
+.viewing-page-4 .bg--placeholder,
+.viewing-page-5 .bg--placeholder,
+.viewing-page-6 .bg--placeholder {
+    background-image: url(../img/bg-05.jpg);
+}
+
+.viewing-page-5 .bg--placeholder,
+.viewing-page-6 .bg--placeholder {
+    background-position-y: -5vh;
+    transform: scale(1.15, 1.15);
+}
+
+.viewing-page-6 .bg--placeholder {
+    background-position-y: -20vh;
+}
+
+.viewing-page-12 #logo {
+    opacity: 0;
+}
+
+.viewing-page-4 .page-3.bg--pattern,
+.viewing-page-7 .page-6.bg--pattern,
+.viewing-page-8 .page-7.bg--pattern,
+.viewing-page-9 .page-8.bg--pattern,
+.viewing-page-10 .page-9.bg--pattern,
+.viewing-page-11 .page-10.bg--pattern,
+.viewing-page-12 .page-11.bg--pattern {
+    height: 100vh;
+    background-position-y: 100vh;
+}
+
+
+/* ==========================================================================
+   Form classes
+   ========================================================================== */
+
+button,
+input,
+textarea {
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    outline: none;
+    padding: 2% 5%;
+    text-align: center;
+    text-transform: uppercase;
+    width: 90%;
+}
+
+#loginForm {
+    margin: 0 auto;
+    max-width: 525px;
+    width: 100%;
+}
+
+.input.input--text input {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #ffffff;
+    font-size: 1.125em;
+}
+
+.input.input--text label {
+    opacity: 0;
+}
+
+.input.input--text label.error {
+    display: block;
+    color: #ffffff;
+    font-size: 0.875em;
+    margin-bottom: 2em;
+    opacity: 1;
+}
+
+.buttom--primary {
+    border: solid 1px rgba(233, 107, 43, 1);
+    color: rgba(233, 107, 43, 1);
+    width: auto;
+}
+
+.form--feedback {
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    margin-bottom: 1em;
+    padding: 2% 5%;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #ffffff;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #ffffff;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+
+/* ==========================================================================
+   Table classes
+   ========================================================================== */
+
+#table-hours {
+    width: 86%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#table-hours tr {}
+
+#table-hours td {
+    text-align: center;
+    vertical-align: bottom;
+}
+
+#table-hours td span {
+    display: block;
+    width: 100%;
+}
+
+#table-hours td .txt-primary-color.txt--xxxinsane {
+    position: relative;
+    bottom: -10px;
+}
+
+section .section--centered #table-hours tr td.mobile--hidden {
+    padding: 0px 30px
+}
+
+/* ==========================================================================
+   Video classes
+   ========================================================================== */
+
+/* BUG FIREFOX */
+// .video--container {
+//     position: absolute;
+//     // top: 0;
+//     // bottom: 0;
+//     width: 100%;
+//     // height: 100%;
+//     overflow: hidden;
+// }
+
+/* CORREÇÃO */
+.video--container{
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    top: 50%;
+    transform: translateY(-50%);    
+}
+
+.video--container video {
+    /* Make video to at least 100% wide and tall */
+    min-width: 100%;
+    min-height: 100%;
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    width: 100%;
+    height: auto;
+    /* Center the video */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+/*
+ * iOS and OSX Smoothing html/content fix
+ */
+
+body,
+html {
+    height: 100%;
+    min-height: 100%;
+    position: fixed !important;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.desktop--hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+*,
+a,
+a:hover,
+a:focus {
+    outline: none;
+}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+    /* Style adjustments for viewports that meet the condition */
+    #logo {
+        left: -10px;
+        top: -10px;
+    }
+    #logo img {
+        height: auto;
+        width: 50%;
+    }
+    section {
+        width: 100%;
+    }
+    .section--centered {
+        max-width: 90% !important;
+        padding: 0 5%;
+        width: 90% !important;
+        min-width: 90%;
+    }
+    /* ==========================================================================
+       Mobile Fonts classes
+       ========================================================================== */
+    .section--centered .txt--xlarge,
+    .section--centered .txt--xxlarge,
+    .section--centered .txt--xxxlarge,
+    .section--centered .txt--insane,
+    .section--centered .txt--xinsane,
+    .section--centered .txt--xxinsane,
+    .section--centered .txt--xxxinsane {
+        font-size: 3.5em;
+    }
+    .section--centered .txt--xxsmall,
+    .section--centered .txt--xsmall,
+    .section--centered .txt--large,
+    .section--centered .txt--xlarge,
+    .section--centered .txt--xxlarge,
+    .section--centered .txt--xxxlarge,
+    .section--centered .txt--insane,
+    .section--centered .txt--xinsane,
+    .section--centered .txt--xxinsane,
+    .section--centered .txt--xxxinsane,
+    .__plus .txt--xxinsane {
+        line-height: 1.5em;
+    }
+    #table-hours {
+        width: 96%;
+    }
+    #table-hours > tbody > tr > td > .txt-primary-color.txt--xlarge.desktop--hidden {
+        font-size: 1em;
+    }
+    // #table-hours > tbody > tr > td:nth-child(0) {
+    //     width: 116px;
+    //     text-align: center;
+    //     position: relative;
+    // }
+    // #table-hours > tbody > tr > td:nth-child(2),
+    // #table-hours > tbody > tr > td:nth-child(3){
+    //     width: 116px;
+    //     text-align: center;
+    //     position: relative;
+    // }
+    .page-1 .txt-primary-color.txt--xlarge{font-size: 2em;}
+    .page-3 .__plus.__txt--negative--magintop,
+    .page-7 .__plus.__txt--negative--magintop {margin-top: .5em;}
+    .page-8 .txt-primary-color.txt--xinsane{font-size: 3em;}
+    .page-11 .txt--xlarge {font-size: 1em;}
+    .page-11 .txt--xxlarge {
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+    .__2017 .txt--xxlarge,
+    .__2017 .txt--xxxlarge{
+        font-size: 2em !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 13px;
+        line-height: 1.2;
+    }
+    .onepage-pagination {
+        display: none !important;
+    }
+    /* ==========================================================================
+       Mobile Helper classes
+       =================    ========================================================= */
+    section.gradient--red.__2016 {
+        background-image: url(../img/comp-year-2016-layer.png), -moz-linear-gradient(#d04e3c 0%, #bf2638 40%, #961348 100%);
+        background-image: url(../img/comp-year-2016-layer.png), -webkit-linear-gradient(#d04e3c 0%, #bf2638 40%, #961348 100%);
+        background-image: url(../img/comp-year-2016-layer.png), linear-gradient(#d04e3c 0%, #bf2638 40%, #961348 100%);
+        background-size: 100% !important;
+    }
+
+    section.gradient--red.__2017 {
+        background-image: url(../img/comp-year-2017-layer.png), -moz-linear-gradient(#d04e3c 0%, #bf2638 40%, #961348 100%);
+        background-image: url(../img/comp-year-2017-layer.png), -webkit-linear-gradient(#d04e3c 0%, #bf2638 40%, #961348 100%);
+        background-image: url(../img/comp-year-2017-layer.png), linear-gradient(#d04e3c 0%, #bf2638 40%, #961348 100%);
+        background-size: 100% !important;
+    }
+
+    section.gradient--red.__2016 {
+        background-position-y: 20%;
+    }
+    section.gradient--red.__2016 .section--centered {
+        padding: 25vh 5% 0;
+    }
+    section.gradient--red.__2017 {
+        background-position-y: 85%;
+    }
+    section.gradient--red.__2017 .section--centered {
+        padding: 0 5% 30vh;
+    }
+    
+    .viewing-page-4 .page-3.bg--pattern,
+    .viewing-page-7 .page-6.bg--pattern,
+    .viewing-page-8 .page-7.bg--pattern,
+    .viewing-page-9 .page-8.bg--pattern,
+    .viewing-page-10 .page-9.bg--pattern,
+    .viewing-page-11 .page-10.bg--pattern,
+    .viewing-page-12 .page-11.bg--pattern {
+        height: 100%;
+        background-position-y: 100%;
+    }
+
+    #table-hours > tbody > tr > td > .txt-primary-color.txt--xlarge.desktop--hidden {
+        display: block !important;
+        visibility: visible !important;
+    }
+    #table-hours > tbody > tr > td.table--responsible{
+        font-size: 2em !important;
+    }
+    .table--responsible {
+        display: block !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+    .table--responsible.__half {
+        float: left;
+        width: 49.2% !important;
+    }
+    .mobile--hidden {
+        display: none !important;
+        visibility: hidden;
+    }
+    .table--responsible .desktop--hidden{
+        display: block !important;
+        font-size: .6em;
+        position: relative;
+        visibility: visible !important;
+        top: -.6em;
+    }
+}
+
+@media print,
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    /*  
+     * Don't show links for images, or javascript/internal links
+     */
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+        /* h5bp.com/t */
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    @page {
+        margin: 0.5cm;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

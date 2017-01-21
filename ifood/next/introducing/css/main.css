@@ -1,0 +1,422 @@
+.hsContent,
+img {
+    vertical-align: middle
+}
+
+.ir,
+.visuallyhidden {
+    overflow: hidden;
+    border: 0
+}
+
+.hidden,
+.invisible {
+    visibility: hidden
+}
+
+button,
+html,
+input,
+select,
+textarea {
+    color: #222
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.4
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+textarea {
+    resize: vertical
+}
+
+.chromeframe {
+    margin: .2em 0;
+    background: #ccc;
+    color: #000;
+    padding: .2em 0
+}
+
+body,
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+.no-js {
+    padding-top: 106px
+}
+
+h2 {
+    margin-top: 0
+}
+
+.loading {
+    background: url(../img/ico_loading.gif) center center no-repeat
+}
+
+section {
+    opacity: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.loaded section,
+.no-js section {
+    opacity: 1;
+    -webkit-transition: opacity .3s ease-out;
+    -moz-transition: opacity .3s ease-out;
+    transition: opacity .3s ease-out
+}
+
+main {
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+}
+
+.bcg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+
+    width: 100%;
+    z-index: 4;
+    transition: background .6s ease-out;
+}
+
+.maskContent,
+.maskOverlay,
+.maskHero {
+    background-color: transparent;
+    visibility: hidden;
+    top: 0;
+
+    z-index: 5;
+}
+
+
+.bcg.maskOverlay {background-color: rgba(107, 107, 107, .4);}
+.bcg.maskContent {background-image: url(../img/mask-01.png);}
+.bcg.bgHero {background-image: url(../img/slide-01.jpg);}
+
+.bcg.slide-2 {background-image: url(../img/slide-02-1.png);}
+.bcg.slide-4 {background-image: url(../img/slide-04.jpg);}
+
+// section:nth-child(1) .bcg{background-color: green;}
+// section:nth-child(2) .bcg {
+//     background-color: blue;
+// }
+
+// section:nth-child(3) .bcg {
+//     background-color: red;
+// }
+
+// section:nth-child(4) .bcg{background-color: lightblue;}
+// section:nth-child(5) .bcg{background-color: pink;}
+// #slide-1 .bcg.maskOverlay {
+//     background-color: rgba(107, 107, 107, .4);
+// }
+
+// #slide-1 .bcg.maskHero {
+//     background-image: url(../img/slide-01.jpg);
+// }
+
+// #slide-4 .bcg.maskContent {
+//     background-image: url(../img/mask-01.png);
+// }
+
+// #slide-5 .bcg.maskContent {
+//     background-image: url(../img/mask-02.png);
+// }
+
+// #slide-6 .bcg.maskContent {
+//     background-image: url(../img/mask-03.png);
+// }
+
+// #slide-2 .bcg.gray {
+//     background-image: url(../img/slide-02-1.jpg);
+// }
+
+// #slide-2 .bcg.red {
+//     background-image: url(../img/slide-03-1.jpg);
+// }
+
+// #slide-4 .bcg {
+//     background-image: url(../img/slide-04.jpg);
+// }
+
+// #slide-5 .bcg {
+//     background-image: url(../img/slide-06.jpg);
+// }
+
+// #slide-6 .bcg {
+//     background-image: url(../img/slide-08.jpg);
+// }
+
+// #slide-7 .bcg {
+//     background-image: url(../img/slide-08.jpg);
+// }
+
+.bcg.slide-2 {
+    background-image: url(../img/slide-02-1.jpg);
+}
+
+// #slide-2 .bcg.red {
+//     background-image: url(../img/slide-03-1.jpg);
+// }
+
+// #slide-4 .bcg {
+//     background-image: url(../img/slide-04.jpg);
+// }
+
+// #slide-5 .bcg {
+//     background-image: url(../img/slide-06.jpg);
+// }
+
+// #slide-6 .bcg {
+//     background-image: url(../img/slide-08.jpg);
+// }
+
+// #slide-7 .bcg {
+//     background-image: url(../img/slide-08.jpg);
+// }
+
+.hsContainer {
+    display: table;
+    table-layout: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+.hsContent {
+    max-width: 960px;
+    margin: 0;
+    display: table-cell;
+    color: #ebebeb;
+    padding: 0 8%;
+    text-align: center
+}
+
+.hsContent .playContent {
+    margin-top: 1em;
+}
+
+.hsContent .playContent span {
+    display: block;
+    margin: 1em;
+}
+
+.hsContent .txtContent {
+    position: absolute;
+    width: 440px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.hsContent .txtContent.allLeft {
+    left: 25%;
+    transform: translateX(-50%);
+}
+
+.hsContent .txtContent.allRight {
+    right: 25%;
+    transform: translateX(50%);
+}
+
+.hsContent .nextProducts {
+    left: 50%;
+    padding: 0;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 850px;
+}
+
+.hsContent .nextProducts li {
+    background: url('../img/mask-04.png') no-repeat 0 0 transparent;
+    background-size: cover;
+    display: block;
+    float: left;
+    margin: 0 .5em;
+    padding: 0 .5em 1em;
+    width: 15.7em;
+    min-height: 20em;
+}
+
+.hsContent .nextProducts li:nth-first,
+.hsContent .nextProducts li:nth-last {
+    padding-left: 0;
+}
+
+.ir {
+    background-color: transparent
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%
+}
+
+.hasFixed{
+    position: fixed !important;
+}
+
+.hidden {
+    display: none!important
+}
+
+.visuallyhidden {
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    width: 1px
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: " ";
+    display: table
+}
+
+.clearfix:after {
+    clear: both
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .hsContent{
+        max-width: 80%;
+        padding: 0 10%;
+        width: 80%;
+    }
+
+    .hsContent .txtContent,
+    .hsContent .txtContent.allLeft,
+    .hsContent .txtContent.allRight,
+    .hsContent .nextProducts{
+        padding: 0 10%;
+        position: absolute;
+        left: 50%;
+        max-width: 80%;
+        top: 30%;
+        transform: translate(-50%);
+        width: 80%;
+    }
+
+    #slide-7 .txtContent{top: 5%;}
+    .hsContent .nextProducts{
+        margin: 0 7%;
+        top: 25%;
+    }
+    .hsContent .nextProducts li{
+        margin-bottom: 1em;
+    }
+    .hsContent .nextProducts li:last-child{
+        margin-bottom: 0;
+    }
+}
+
+@media print {
+    blockquote,
+    img,
+    pre,
+    tr {
+        page-break-inside: avoid
+    }
+    * {
+        background: 0 0!important;
+        color: #000!important;
+        box-shadow: none!important;
+        text-shadow: none!important
+    }
+    a,
+    a:visited {
+        text-decoration: underline
+    }
+    a[href]:after {
+        content: " (" attr(href) ")"
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")"
+    }
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: ""
+    }
+    blockquote,
+    pre {
+        border: 1px solid #999
+    }
+    thead {
+        display: table-header-group
+    }
+    img {
+        max-width: 100%!important
+    }
+    @page {
+        margin: .5cm
+    }
+    h2,
+    h3,
+    p {
+        orphans: 3;
+        widows: 3
+    }
+    h2,
+    h3 {
+        page-break-after: avoid
+    }
+}
